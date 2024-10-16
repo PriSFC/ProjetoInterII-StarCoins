@@ -546,3 +546,4 @@ c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net
 c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.pdb
 c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.genruntimeconfig.cache
 c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\ref\StarCoins.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.sourcelink.json

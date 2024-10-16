@@ -28,10 +28,11 @@
         <th scope="col">Moeda</th>
         <input placeholder="Moeda" name="Moeda" class="form-control" value="@Model.Moeda"/><br>
         <th scope="col">Data de Entrega</th>
-        <input placeholder="DataEntrega" name="DataEntrega" class="form-control" type="text" value="@Model.DataEntrega.ToString("dd/MM/yyyy")"/><br>
+        <input placeholder="DataEntrega" name="DataEntrega" class="form-control" type="date" value="@Model.DataEntrega.ToString("yyyy-MM-dd")"/><br>
         <button class="btn btn-primary">Salvar</button>
         <a class="btn btn-outline-secondary" href="/atividade/read">Voltar</a>
     </form>
+
 
 </body>
 </html>
