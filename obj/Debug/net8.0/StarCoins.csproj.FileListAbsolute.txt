@@ -1,0 +1,548 @@
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\appsettings.Development.json
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\appsettings.json
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.staticwebassets.runtime.json
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.exe
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.deps.json
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.runtimeconfig.json
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.pdb
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfoInputs.cache
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfo.cs
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.csproj.CoreCompileInputs.cache
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.MvcApplicationPartsAssemblyInfo.cache
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cache
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cs
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets.build.json
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets.development.json
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.StarCoins.Microsoft.AspNetCore.StaticWebAssets.props
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.build.StarCoins.props
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StarCoins.props
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StarCoins.props
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets.pack.json
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\scopedcss\bundle\StarCoins.styles.css
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\scopedcss\projectbundle\StarCoins.bundle.scp.css
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.dll
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\refint\StarCoins.dll
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.pdb
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.genruntimeconfig.cache
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\ref\StarCoins.dll
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.csproj.AssemblyReference.cache
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Azure.Core.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Azure.Identity.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Humanizer.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.CodeDom.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Memory.Data.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.csproj.Up2Date
+C:\StarCoins\StarCoins\bin\Debug\net8.0\appsettings.Development.json
+C:\StarCoins\StarCoins\bin\Debug\net8.0\appsettings.json
+C:\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.staticwebassets.runtime.json
+C:\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.exe
+C:\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.deps.json
+C:\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.runtimeconfig.json
+C:\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.pdb
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Azure.Core.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Azure.Identity.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Humanizer.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.CodeDom.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Memory.Data.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.csproj.AssemblyReference.cache
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.GeneratedMSBuildEditorConfig.editorconfig
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfoInputs.cache
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfo.cs
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.csproj.CoreCompileInputs.cache
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.MvcApplicationPartsAssemblyInfo.cache
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cache
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cs
+C:\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets.build.json
+C:\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets.development.json
+C:\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.StarCoins.Microsoft.AspNetCore.StaticWebAssets.props
+C:\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.build.StarCoins.props
+C:\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StarCoins.props
+C:\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StarCoins.props
+C:\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets.pack.json
+C:\StarCoins\StarCoins\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\StarCoins\StarCoins\obj\Debug\net8.0\scopedcss\bundle\StarCoins.styles.css
+C:\StarCoins\StarCoins\obj\Debug\net8.0\scopedcss\projectbundle\StarCoins.bundle.scp.css
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.csproj.Up2Date
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.dll
+C:\StarCoins\StarCoins\obj\Debug\net8.0\refint\StarCoins.dll
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.pdb
+C:\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.genruntimeconfig.cache
+C:\StarCoins\StarCoins\obj\Debug\net8.0\ref\StarCoins.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\appsettings.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.staticwebassets.runtime.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.exe
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.deps.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.runtimeconfig.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\StarCoins.pdb
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Humanizer.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.csproj.AssemblyReference.cache
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfoInputs.cache
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfo.cs
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.csproj.CoreCompileInputs.cache
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cache
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cs
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.StarCoins.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.build.StarCoins.props
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StarCoins.props
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StarCoins.props
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\scopedcss\bundle\StarCoins.styles.css
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\scopedcss\projectbundle\StarCoins.bundle.scp.css
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.csproj.Up2Date
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\refint\StarCoins.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.pdb
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\StarCoins.genruntimeconfig.cache
+C:\Users\prisc\OneDrive\Área de Trabalho\StarCoins_Testes\StarCoins2909\StarCoins\StarCoins\obj\Debug\net8.0\ref\StarCoins.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\appsettings.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.staticwebassets.runtime.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.exe
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.deps.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.runtimeconfig.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\StarCoins.pdb
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Azure.Core.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Azure.Identity.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Humanizer.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Mono.TextTemplating.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.CodeDom.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.Convention.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.Hosting.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.Runtime.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Composition.TypedParts.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Drawing.Common.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Memory.Data.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Runtime.Caching.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\System.Windows.Extensions.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.csproj.AssemblyReference.cache
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfoInputs.cache
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.AssemblyInfo.cs
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.csproj.CoreCompileInputs.cache
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cache
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.RazorAssemblyInfo.cs
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets.build.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets.development.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.StarCoins.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.build.StarCoins.props
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StarCoins.props
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StarCoins.props
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\scopedcss\bundle\StarCoins.styles.css
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\scopedcss\projectbundle\StarCoins.bundle.scp.css
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.csproj.Up2Date
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\refint\StarCoins.dll
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.pdb
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.genruntimeconfig.cache
+c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\ref\StarCoins.dll
