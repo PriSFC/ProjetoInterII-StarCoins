@@ -547,3 +547,9 @@ c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net
 c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.genruntimeconfig.cache
 c:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\ref\StarCoins.dll
 C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\obj\Debug\net8.0\StarCoins.sourcelink.json
+C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

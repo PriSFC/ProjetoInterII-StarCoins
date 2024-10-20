@@ -9,4 +9,6 @@ public class Atividade {
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
     public DateOnly DataEntrega { get; set; } 
 
+    public bool IsFinalized { get; set; }
+
 }

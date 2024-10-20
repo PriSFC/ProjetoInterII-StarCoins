@@ -48,3 +48,6 @@ Atualiza o banco de dados com a migration:
 `dotnet ef database update`
 
 `dotnet ef database update --connection "Data Source=My.db"`
+
+input radio
+https://www.w3schools.com/tags/att_input_type_radio.asp

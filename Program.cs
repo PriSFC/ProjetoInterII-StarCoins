@@ -5,7 +5,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<StarCoinsDatabase>(options => options.UseInMemoryDatabase("db"));
+//builder.Services.AddDbContext<StarCoinsDatabase>(options => options.UseInMemoryDatabase("db"));
+
+// Informações de como se conectar ao sql server
+var connString = "Server=PSFCLCIMC\\MSSQLSERVER02;Database=db_StarCoins;Trusted_Connection=True;User Id= PSFCLCIMC/prisc;TrustServerCertificate=True";
+builder.Services.AddDbContext<StarCoinsDatabase>(options => options.UseSqlServer(connString));
+
 
 builder.Services.AddSession();
 
