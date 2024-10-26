@@ -1,0 +1,40 @@
+@model IEnumerable<StarCoins.Models.AlunoAtividade>
+
+@{
+    ViewData["Title"] = "Atividades dos Alunos";
+}
+
+<h2>Atividades dos Alunos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Atividade</th>
+            <th>Aluno</th>
+            <th>Nota</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var alunoAtividade in Model)
+        {
+            <tr>
+                <td>@alunoAtividade.Atividade.Nome</td>
+                <td>@alunoAtividade.Aluno.Nome</td>
+                <td>
+                    @if (alunoAtividade.Nota.HasValue)
+                    {
+                        @alunoAtividade.Nota.Value
+                    }
+                    else
+                    {
+                        <span>Não Atribuída</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@alunoAtividade.AlunoAtividadeId">Atribuir Nota</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

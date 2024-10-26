@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/AlunoAtividade/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9BdGl2aWRhZGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/AlunoAtividade/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9BdGl2aWRhZGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Atividade/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRpdmlkYWRlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -8,4 +8,7 @@ public class Produto {
     public double Moeda { get; set; }
     public int Quantidade { get; set; }
     public int Status { get; set; } //1 - em estoque, 2 - esgotado, 3 - descontinuado, 4 - em trânsito
+
+    // Coleção de ProdutoPedido
+    public ICollection<ProdutoPedido> ProdutoPedidos { get; set; }
 }

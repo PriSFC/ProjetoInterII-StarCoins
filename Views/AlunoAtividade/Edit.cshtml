@@ -1,0 +1,21 @@
+@model StarCoins.Models.AlunoAtividade
+
+@{
+    ViewData["Title"] = "Editar Nota";
+}
+
+<h2>Editar Nota</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Nota" class="control-label"></label>
+        <input asp-for="Nota" class="form-control" />
+        <span asp-validation-for="Nota" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="AlunoAtividadeId" />
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+    </div>
+</form>
+
+<a asp-action="Index">Voltar</a>
