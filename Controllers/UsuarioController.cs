@@ -24,13 +24,36 @@ public class UsuarioController : Controller {
     }
 
     [HttpPost]
-    public ActionResult Create(Usuario model) {
+public ActionResult Create(Usuario model)
+{
+    // Verifica se o perfil é "Aluno" para criar uma instância do tipo Aluno
+    if (model.Perfil == "Aluno")
+    {
+        // Cria uma instância de Aluno e define as propriedades compartilhadas
+        var aluno = new Aluno
+        {
+            UsuarioId = model.UsuarioId, // Presumindo que o ID seja gerado ou atribuído
+            Nome = model.Nome,
+            Login = model.Login,
+            Email = model.Email,
+            Senha = model.Senha,
+            Perfil = model.Perfil,
+            Moeda = 30 // Define as moedas iniciais para o aluno
+        };
 
-        db.Usuarios.Add(model); // ~INSERT INTO Usuarios VALUES (model.Nome...)
-        db.SaveChanges(); // ~commit
-        return RedirectToAction("Read");
-
+        db.Usuarios.Add(aluno); // Adiciona o objeto Aluno ao banco de dados
     }
+    else
+    {
+        // Adiciona o objeto Usuario para perfis diferentes de "Aluno"
+        db.Usuarios.Add(model);
+    }
+
+    db.SaveChanges(); // ~commit
+
+    return RedirectToAction("Read");
+}
+
 
     public ActionResult Delete(int id){
         // realizar a exclusão

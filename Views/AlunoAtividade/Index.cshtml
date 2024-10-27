@@ -4,37 +4,43 @@
     ViewData["Title"] = "Atividades dos Alunos";
 }
 
-<h2>Atividades dos Alunos</h2>
+<div class="text-center">
+    <h2>Atividade: @Model.First().Atividade.Nome</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Atividade</th>
-            <th>Aluno</th>
-            <th>Nota</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var alunoAtividade in Model)
+    <form asp-action="Update" method="post">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var alunoAtividade in Model)
+                {
+                    <tr>
+                        <td>@alunoAtividade.Aluno.Nome</td>
+                        <td>
+                            @if (alunoAtividade.Nota.HasValue)
+                            {
+                                <!-- Exibe a nota como texto quando já foi salva -->
+                                <span>@alunoAtividade.Nota</span>
+                            }
+                            else
+                            {
+                                <!-- Permite a edição de notas se ainda não foi salva -->
+                                <input type="number" step = "0.1" name="notas[@alunoAtividade.AlunoAtividadeId]" 
+                                       value="0.0" min="0.0" max="10" placeholder="Insira a nota" />
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        @if (!Model.Any(a => a.Nota.HasValue))
         {
-            <tr>
-                <td>@alunoAtividade.Atividade.Nome</td>
-                <td>@alunoAtividade.Aluno.Nome</td>
-                <td>
-                    @if (alunoAtividade.Nota.HasValue)
-                    {
-                        @alunoAtividade.Nota.Value
-                    }
-                    else
-                    {
-                        <span>Não Atribuída</span>
-                    }
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@alunoAtividade.AlunoAtividadeId">Atribuir Nota</a>
-                </td>
-            </tr>
+            <a class="btn btn-primary" href="/alunoatividade/update" method="post">Salvar Notas</a>
         }
-    </tbody>
-</table>
+        <a class="btn btn-outline-secondary" href="/atividade/read">Voltar</a>
+    </form>
+</div>

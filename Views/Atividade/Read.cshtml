@@ -22,7 +22,7 @@
                 <th scope="col">Descrição</th>
                 <th scope="col">Moeda</th>
                 <th scope="col">Data de Entrega</th>
-                <th scope="col"></th>
+                <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -35,9 +35,9 @@
             <td>@atividade.DataEntrega.ToString("dd/MM/yyyy")</td>
             <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="/alunoatividade/index/@atividade.AtividadeId" button type="button" class="btn btn-outline-info btn-sm"><i class="bi bi-trash"></i> Detalhe</a>
-                    <a href="/atividade/update/@atividade.AtividadeId" button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-pencil-square"></i> Editar</a>
-                    <a href="/atividade/delete/@atividade.AtividadeId" button type="button" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Apagar</a>
+                    <a href="/alunoatividade/index/@atividade.AtividadeId" button type="button" class="btn btn-outline-info btn-sm">Detalhe</a>
+                    <a href="/atividade/update/@atividade.AtividadeId" button type="button" class="btn btn-outline-primary btn-sm">Editar</a>
+                    <a href="/atividade/delete/@atividade.AtividadeId" button type="button" class="btn btn-outline-danger btn-sm"> Apagar</a>
                 </div>
             </td>
         </tr>

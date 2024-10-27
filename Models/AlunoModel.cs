@@ -2,5 +2,5 @@ namespace StarCoins.Models;
 
 public class Aluno : Usuario {
     
-    public double Moeda { get; set; }
+    public int Moeda { get; set; }
 }

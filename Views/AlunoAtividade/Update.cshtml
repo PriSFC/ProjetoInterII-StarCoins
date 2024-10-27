@@ -1,0 +1,50 @@
+@model IEnumerable<StarCoins.Models.AlunoAtividade>
+
+@{
+    ViewData["Title"] = "Visualizar Notas da Atividade dos Alunos";
+}
+
+<div class="text-center">
+    <h2>Atividade: @Model.FirstOrDefault()?.Atividade?.Nome</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Aluno</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var alunoAtividade in Model)
+                {
+                    <tr>
+                        <td>@alunoAtividade.Aluno.Nome</td>
+                        <td>
+                            @if (alunoAtividade.Nota.HasValue)
+                            {
+                                <!-- Exibe a nota como texto quando já foi salva -->
+                                <span>@alunoAtividade.Nota.Value.ToString("0.0")</span> <!-- Formata a nota para uma casa decimal -->
+                            }
+                            else
+                            {
+                                <!-- Exibe uma mensagem se a nota não foi salva -->
+                                <span>Nota não disponível</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="2">Nenhuma atividade encontrada para esta atividade.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Botão de voltar -->
+    <a class="btn btn-outline-secondary" href="/atividade/read">Voltar</a>
+</div>
