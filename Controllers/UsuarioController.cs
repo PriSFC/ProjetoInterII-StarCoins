@@ -115,6 +115,33 @@ public ActionResult Create(Usuario model)
             return RedirectToAction("Index", "Home");
         }
     }
+    
+    // Método para verificar as informações do usuário logado
+    public ActionResult Verificar() {
+        // Obtém o ID do usuário da sessão
+        var userId = HttpContext.Session.GetInt32("userId");
 
+        if (userId == null) {
+            return RedirectToAction("Login"); // Redireciona para Login se não houver usuário logado
+        }
+
+        // Busca o usuário no banco de dados
+        var usuario = db.Usuarios.SingleOrDefault(u => u.UsuarioId == userId);
+
+        if (usuario == null) {
+            return NotFound(); // Retorna um erro se o usuário não for encontrado
+        }
+
+        return View(usuario); // Retorna a view com as informações do usuário
+    }
+
+    public ActionResult Logout() {
+    // Limpa a sessão do usuário
+    HttpContext.Session.Remove("userId");
+    HttpContext.Session.Remove("userName");
+
+    // Redireciona para a página de login
+    return RedirectToAction("Login");
+}
     
 }

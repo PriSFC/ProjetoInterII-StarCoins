@@ -35,7 +35,7 @@ namespace StarCoins.Controllers
 
         // Página de atualização para salvar notas dos alunos
         [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Update(int id)
         {
             // Recupera a atividade específica com os alunos vinculados
             var atividadeDetalhes = await db.AlunoAtividades
