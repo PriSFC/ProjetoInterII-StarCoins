@@ -29,51 +29,61 @@ namespace StarCoins.Controllers
         [HttpPost]
         public async Task<ActionResult> Create(Atividade model)
         {
+            // Verifica se os dados do modelo são válidos de acordo com as regras de validação definidas
             if (ModelState.IsValid)
             {
-                // Adicionar a nova atividade
+                // Adiciona a nova atividade ao contexto do banco de dados
                 db.Atividades.Add(model);
-                await db.SaveChangesAsync(); // Salvar a nova atividade no banco
 
-                // Verifica se o AtividadeId foi definido corretamente
-                if (model.AtividadeId <= 0) 
+                // Salva a nova atividade no banco de dados de forma assíncrona
+                await db.SaveChangesAsync();
+
+                // Verifica se o ID da atividade foi definido corretamente após a gravação no banco
+                if (model.AtividadeId <= 0)
                 {
+                    // Adiciona um erro ao estado do modelo indicando falha na criação da atividade
                     ModelState.AddModelError("", "Atividade não foi criada corretamente.");
-                    return View(model); // Retornar a view com erro
+                    return View(model); // Retorna à view com o erro para o usuário corrigir
                 }
 
-                // Recuperar todos os alunos que possuem o perfil "Aluno"
+                // Recupera todos os usuários que possuem o perfil "Aluno" da base de dados
                 var alunos = await db.Usuarios
                                     .Where(u => u.Perfil == "Aluno")
                                     .ToListAsync();
 
-                // Verifica se há alunos para associar
+                // Verifica se há alunos cadastrados para serem associados à nova atividade
                 if (alunos == null || alunos.Count == 0)
                 {
+                    // Adiciona um erro ao estado do modelo indicando que nenhum aluno foi encontrado
                     ModelState.AddModelError("", "Nenhum aluno encontrado para associar a esta atividade.");
-                    return View(model); // Retornar a view com erro
+                    return View(model); // Retorna à view com o erro para o usuário corrigir
                 }
 
-                // Criar registros de AlunoAtividade para cada aluno
+                // Para cada aluno encontrado, cria um novo registro de AlunoAtividade associando-o à nova atividade
                 foreach (var aluno in alunos)
                 {
                     var alunoAtividade = new AlunoAtividade
                     {
-                        AtividadeId = model.AtividadeId,
-                        UsuarioId = aluno.UsuarioId,
-                        Nota = null // Inicialmente sem nota
+                        AtividadeId = model.AtividadeId, // Define o ID da atividade recém-criada
+                        UsuarioId = aluno.UsuarioId,     // Define o ID do aluno
+                        Nota = null                      // Inicialmente, a nota é definida como nula
                     };
 
+                    // Adiciona o novo registro de AlunoAtividade ao contexto do banco de dados
                     db.AlunoAtividades.Add(alunoAtividade);
                 }
 
-                await db.SaveChangesAsync(); // Salvar as associações
+                // Salva as associações entre a atividade e os alunos no banco de dados de forma assíncrona
+                await db.SaveChangesAsync();
 
+                // Redireciona o usuário para a ação "Read", que possivelmente exibe a lista de atividades criadas
                 return RedirectToAction("Read");
             }
 
+            // Caso os dados do modelo não sejam válidos, retorna à view com o modelo para que o usuário corrija os erros
             return View(model);
         }
+
 
 
         public ActionResult Delete(int id)

@@ -10,6 +10,7 @@ namespace StarCoins.Controllers
     {
         private readonly StarCoinsDatabase db;
 
+        // Construtor que injeta a instância do banco de dados
         public AlunoAtividadeController(StarCoinsDatabase db)
         {
             this.db = db;
@@ -19,17 +20,20 @@ namespace StarCoins.Controllers
         [HttpGet]
         public async Task<IActionResult> Read(int id)
         {
+            // Consulta os detalhes da atividade específica incluindo os dados dos alunos e da atividade
             var atividadeDetalhes = await db.AlunoAtividades
-                .Include(a => a.Aluno) // Inclui os detalhes dos alunos
+                .Include(a => a.Aluno) // Inclui os detalhes dos alunos vinculados
                 .Include(a => a.Atividade) // Inclui os detalhes da atividade
                 .Where(a => a.AtividadeId == id)
                 .ToListAsync();
 
+            // Verifica se a atividade foi encontrada e se possui registros de alunos
             if (atividadeDetalhes == null || !atividadeDetalhes.Any())
             {
-                return NotFound();
+                return NotFound(); // Retorna um erro 404 se a atividade não for encontrada
             }
 
+            // Retorna a view com os detalhes da atividade e dos alunos vinculados
             return View(atividadeDetalhes);
         }
 
@@ -37,19 +41,21 @@ namespace StarCoins.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            // Recupera a atividade específica com os alunos vinculados
+            // Recupera a atividade específica junto com os alunos vinculados para edição
             var atividadeDetalhes = await db.AlunoAtividades
-                .Include(a => a.Aluno)
-                .Include(a => a.Atividade)
+                .Include(a => a.Aluno) // Inclui os detalhes dos alunos
+                .Include(a => a.Atividade) // Inclui os detalhes da atividade
                 .Where(a => a.AtividadeId == id)
                 .ToListAsync();
 
+            // Verifica se a atividade foi encontrada e se possui alunos vinculados
             if (atividadeDetalhes == null || !atividadeDetalhes.Any())
             {
-                return NotFound();
+                return NotFound(); // Retorna um erro 404 se não houver registros encontrados
             }
 
-            return View(atividadeDetalhes); // Exibe a view de atualização com os detalhes da atividade
+            // Retorna a view de atualização com os detalhes da atividade e dos alunos vinculados
+            return View(atividadeDetalhes);
         }
 
         // Atualiza as notas dos alunos para uma atividade específica
@@ -61,11 +67,13 @@ namespace StarCoins.Controllers
                 .Where(a => a.AtividadeId == atividadeId)
                 .ToListAsync();
 
+            // Verifica se há registros existentes de atividades dos alunos
             if (!alunoAtividadesExistentes.Any())
             {
-                return NotFound();
+                return NotFound(); // Retorna um erro 404 se não houver registros encontrados
             }
 
+            // Para cada registro de aluno na atividade, tenta atualizar a nota
             foreach (var alunoAtividade in alunoAtividadesExistentes)
             {
                 if (alunoAtividades.TryGetValue(alunoAtividade.AlunoAtividadeId, out var alunoAtividadeAtualizada))
@@ -73,34 +81,36 @@ namespace StarCoins.Controllers
                     // Atualiza a nota da atividade do aluno
                     alunoAtividade.Nota = alunoAtividadeAtualizada.Nota;
 
-                    // Converte a nota em moedas com base no valor decimal
+                    // Recupera o aluno para atualizar suas moedas
                     var aluno = await db.Usuarios.FindAsync(alunoAtividade.UsuarioId);
                     if (aluno is Aluno alunoAtual)
                     {
+                        // Calcula o valor em moedas com base na nota e atualiza a quantidade de moedas do aluno
                         int valorEmMoeda = CalcularMoedas(alunoAtividade.Nota);
                         alunoAtual.Moeda += valorEmMoeda;
-                        db.Usuarios.Update(alunoAtual); // Certifique-se de que a alteração é rastreada
+                        db.Usuarios.Update(alunoAtual); // Atualiza o aluno no contexto de banco de dados
                     }
                 }
             }
 
-            // Salva todas as alterações no banco de dados
+            // Salva todas as alterações no banco de dados de forma assíncrona
             await db.SaveChangesAsync();
 
-            // Redireciona para a página de visualização da atividade
+            // Redireciona para a página de visualização da atividade específica
             return RedirectToAction("Read", new { id = atividadeId });
         }
 
+        // Método auxiliar para calcular o número de moedas com base na nota
         private int CalcularMoedas(decimal? nota)
         {
             return nota switch
             {
-                >= 9m and <= 10m => 15,
-                >= 6m and < 9m => 10,
-                >= 1m and < 6m => 5,
-                _ => 0
+                >= 9m and <= 10m => 15, // Notas de 9 a 10 geram 15 moedas
+                >= 6m and < 9m => 10,   // Notas de 6 a 8,9 geram 10 moedas
+                >= 1m and < 6m => 5,    // Notas de 1 a 5,9 geram 5 moedas
+                _ => 0                  // Notas abaixo de 1 geram 0 moedas
             };
         }
-
     }
+
 }
