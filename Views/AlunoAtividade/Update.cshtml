@@ -1,50 +1,43 @@
 @model IEnumerable<StarCoins.Models.AlunoAtividade>
 
 @{
-    ViewData["Title"] = "Visualizar Notas da Atividade dos Alunos";
+    ViewData["Title"] = "Atividades dos Alunos";
 }
 
 <div class="text-center">
-    <h2>Atividade: @Model.FirstOrDefault()?.Atividade?.Nome</h2>
+    <h2>Atividade: @Model.First().Atividade.Nome</h2>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Aluno</th>
-                <th>Nota</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                foreach (var alunoAtividade in Model)
+    <form action="/AlunoAtividade/SalvarNotas" method="post">
+        <input type="hidden" name="atividadeId" value="@Model.First().Atividade.AtividadeId" />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var alunoAtividade in Model)
                 {
                     <tr>
                         <td>@alunoAtividade.Aluno.Nome</td>
                         <td>
-                            @if (alunoAtividade.Nota.HasValue)
-                            {
-                                <!-- Exibe a nota como texto quando já foi salva -->
-                                <span>@alunoAtividade.Nota.Value.ToString("0.0")</span> <!-- Formata a nota para uma casa decimal -->
-                            }
-                            else
-                            {
-                                <!-- Exibe uma mensagem se a nota não foi salva -->
-                                <span>Nota não disponível</span>
-                            }
+                            <input type="hidden" name="alunoAtividades[@alunoAtividade.AlunoAtividadeId].AlunoAtividadeId" 
+                                value="@alunoAtividade.AlunoAtividadeId" />
+                            <input type="hidden" name="alunoAtividades[@alunoAtividade.AlunoAtividadeId].UsuarioId" 
+                                value="@alunoAtividade.UsuarioId" />
+                            <input type="number" step="0.1" name="alunoAtividades[@alunoAtividade.AlunoAtividadeId].Nota" 
+                                value="@alunoAtividade.Nota ?? 0" min="0.0" max="10" placeholder="0.0" />
                         </td>
                     </tr>
                 }
-            }
-            else
-            {
-                <tr>
-                    <td colspan="2">Nenhuma atividade encontrada para esta atividade.</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+        @if (!Model.Any(a => a.Nota.HasValue))
+        {
+            <button type="submit" class="btn btn-primary">Salvar Notas</button>
+        }
+        <a class="btn btn-outline-secondary" href="/atividade/read">Voltar</a>
+    </form>
 
-    <!-- Botão de voltar -->
-    <a class="btn btn-outline-secondary" href="/atividade/read">Voltar</a>
 </div>

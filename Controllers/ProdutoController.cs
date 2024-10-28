@@ -17,6 +17,11 @@ public class ProdutoController : Controller {
         return View(db.Produtos.ToList()); // ~ SELECT * FROM Produtos
     }
 
+    public ActionResult AlunoView() {
+        
+        return View(db.Produtos.ToList()); // ~ SELECT * FROM Produtos
+    }
+
     [HttpGet]
     public ActionResult Create()
     {
@@ -55,6 +60,23 @@ public class ProdutoController : Controller {
 
     [HttpPost]
     public ActionResult Update(int id, Produto model) {
+
+        var produto = db.Produtos.Single(e => e.ProdutoId == id);
+
+        produto.Nome = model.Nome;
+        produto.Descricao = model.Descricao;
+        produto.Moeda = model.Moeda;
+        produto.Quantidade = model.Quantidade;
+        produto.Status = model.Status;
+        
+        db.SaveChanges();
+
+        return RedirectToAction("Read");
+
+    }
+
+    [HttpPost] //FAZER
+    public ActionResult Comprar(int id, Produto model) {
 
         var produto = db.Produtos.Single(e => e.ProdutoId == id);
 

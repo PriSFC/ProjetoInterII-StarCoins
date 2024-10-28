@@ -17,7 +17,7 @@ namespace StarCoins.Controllers
 
         // Lista a atividade específica com os alunos vinculados
         [HttpGet]
-        public async Task<IActionResult> Index(int id)
+        public async Task<IActionResult> Read(int id)
         {
             var atividadeDetalhes = await db.AlunoAtividades
                 .Include(a => a.Aluno) // Inclui os detalhes dos alunos
@@ -35,7 +35,7 @@ namespace StarCoins.Controllers
 
         // Página de atualização para salvar notas dos alunos
         [HttpGet]
-        public async Task<IActionResult> Update(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             // Recupera a atividade específica com os alunos vinculados
             var atividadeDetalhes = await db.AlunoAtividades
@@ -54,40 +54,32 @@ namespace StarCoins.Controllers
 
         // Atualiza as notas dos alunos para uma atividade específica
         [HttpPost]
-        public async Task<IActionResult> Update(int id, Dictionary<int, decimal?> notas)
+        public async Task<IActionResult> SalvarNotas(int atividadeId, Dictionary<int, AlunoAtividade> alunoAtividades)
         {
             // Recupera as atividades dos alunos com base na atividade especificada
-            var alunoAtividades = await db.AlunoAtividades
-                .Where(a => a.AtividadeId == id)
+            var alunoAtividadesExistentes = await db.AlunoAtividades
+                .Where(a => a.AtividadeId == atividadeId)
                 .ToListAsync();
 
-            if (!alunoAtividades.Any())
+            if (!alunoAtividadesExistentes.Any())
             {
                 return NotFound();
             }
 
-            foreach (var alunoAtividade in alunoAtividades)
+            foreach (var alunoAtividade in alunoAtividadesExistentes)
             {
-                // Verifica se há uma nota correspondente no dicionário 'notas'
-                if (notas.TryGetValue(alunoAtividade.AlunoAtividadeId, out decimal? nota))
+                if (alunoAtividades.TryGetValue(alunoAtividade.AlunoAtividadeId, out var alunoAtividadeAtualizada))
                 {
-                    // Atualiza a nota da atividade do aluno, garantindo que seja um valor decimal
-                    alunoAtividade.Nota = nota ?? 0;
+                    // Atualiza a nota da atividade do aluno
+                    alunoAtividade.Nota = alunoAtividadeAtualizada.Nota;
 
                     // Converte a nota em moedas com base no valor decimal
                     var aluno = await db.Usuarios.FindAsync(alunoAtividade.UsuarioId);
                     if (aluno is Aluno alunoAtual)
                     {
-                        // Define a quantidade de moedas com base na nota
-                        int valorEmMoeda = nota switch
-                        {
-                            >= 9m and <= 10m => 15,    // 15 moedas para notas entre 9 e 10
-                            >= 6m and < 9m => 10,      // 10 moedas para notas entre 6 e 8.99
-                            >= 1m and < 6m => 5,       // 5 moedas para notas entre 1 e 5.99
-                            _ => 0                     // Nenhuma moeda para nota 0 ou menor
-                        };
-
+                        int valorEmMoeda = CalcularMoedas(alunoAtividade.Nota);
                         alunoAtual.Moeda += valorEmMoeda;
+                        db.Usuarios.Update(alunoAtual); // Certifique-se de que a alteração é rastreada
                     }
                 }
             }
@@ -96,7 +88,19 @@ namespace StarCoins.Controllers
             await db.SaveChangesAsync();
 
             // Redireciona para a página de visualização da atividade
-            return RedirectToAction("Update", new { id });
+            return RedirectToAction("Read", new { id = atividadeId });
         }
+
+        private int CalcularMoedas(decimal? nota)
+        {
+            return nota switch
+            {
+                >= 9m and <= 10m => 15,
+                >= 6m and < 9m => 10,
+                >= 1m and < 6m => 5,
+                _ => 0
+            };
+        }
+
     }
 }
