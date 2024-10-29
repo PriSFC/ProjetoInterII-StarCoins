@@ -111,6 +111,7 @@ public ActionResult Create(Usuario model)
             // login (sessão)
             HttpContext.Session.SetInt32("userId", user.UsuarioId);
             HttpContext.Session.SetString("userName", user.Nome);
+            HttpContext.Session.SetString("perfil", user.Perfil);
             
             return RedirectToAction("Index", "Home");
         }

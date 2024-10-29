@@ -9,7 +9,8 @@ namespace StarCoins.Controllers {
             
             HomeModel home = new HomeModel();
 
-            home.Nome = "Usuário?";
+            home.Nome = HttpContext.Session.GetString("userName");
+            home.Perfil = HttpContext.Session.GetString("perfil");
 
             return View(home);
         }
