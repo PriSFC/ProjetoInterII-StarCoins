@@ -29,12 +29,15 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Produto" asp-action="read">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Produto" asp-action="AlunoView">Lista Produtos</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="produto" asp-action="comprar">Lista Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Atividade" asp-action="read">Atividades</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="atividade" asp-action="read">Atividades</a>
                         </li>
                         <ul class="navbar-nav ms-auto"> <!-- Itens à direita -->
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="pedido" asp-action="read">Meus Pedidos</a>
+                        </li>
                         <li class="nav-item ms-auto">
                             <a class="nav-link text-dark" asp-area="" asp-controller="usuario" asp-action="verificar">Usuário</a>
                         </li>

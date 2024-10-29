@@ -17,7 +17,7 @@ public class ProdutoController : Controller {
         return View(db.Produtos.ToList()); // ~ SELECT * FROM Produtos
     }
 
-    public ActionResult AlunoView() {
+    public ActionResult Comprar() {
         
         return View(db.Produtos.ToList()); // ~ SELECT * FROM Produtos
     }
@@ -75,22 +75,9 @@ public class ProdutoController : Controller {
 
     }
 
-    [HttpPost] //FAZER
-    public ActionResult Comprar(int id, Produto model) {
 
-        var produto = db.Produtos.Single(e => e.ProdutoId == id);
 
-        produto.Nome = model.Nome;
-        produto.Descricao = model.Descricao;
-        produto.Moeda = model.Moeda;
-        produto.Quantidade = model.Quantidade;
-        produto.Status = model.Status;
+        // Ação para processar a confirmação da compra (POST)
         
-        db.SaveChanges();
-
-        return RedirectToAction("Read");
-
-    }
-
-    
+        
 }

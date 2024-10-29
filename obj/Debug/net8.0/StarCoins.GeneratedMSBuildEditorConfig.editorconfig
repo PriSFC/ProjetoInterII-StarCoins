@@ -42,8 +42,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/AlunoView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBbHVub1ZpZXcuY3NodG1s
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Pedido/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Pedido/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXFJlYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/Comprar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDb21wcmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/ConfirmarCompra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDb25maXJtYXJDb21wcmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/Create.cshtml]

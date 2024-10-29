@@ -12,6 +12,10 @@ public class StarCoinsDatabase: DbContext {
     public DbSet<Atividade> Atividades { get; set; }
     public DbSet<AlunoAtividade> AlunoAtividades { get; set; }
 
+    public DbSet<Produto> Produtos { get; set; }
+   
+    public DbSet<Pedido> Pedidos { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Configurações para Usuario e Aluno
@@ -26,28 +30,12 @@ public class StarCoinsDatabase: DbContext {
 
         modelBuilder.Entity<AlunoAtividade>()
             .HasOne(aa => aa.Aluno)
-            .WithMany()
-            .HasForeignKey(aa => aa.UsuarioId);
-
-        // Configurações para ProdutoPedido
-        modelBuilder.Entity<ProdutoPedido>()
-            .HasKey(pp => new { pp.ProdutoId, pp.PedidoId });
-
-        modelBuilder.Entity<ProdutoPedido>()
-            .HasOne(pp => pp.Produto)
-            .WithMany(p => p.ProdutoPedidos)
-            .HasForeignKey(pp => pp.ProdutoId);
-
-        modelBuilder.Entity<ProdutoPedido>()
-            .HasOne(pp => pp.Pedido)
-           .WithMany(p => p.ProdutoPedidos)
-            .HasForeignKey(pp => pp.PedidoId);
+            .WithMany() // Se necessário, especifique o nome da coleção
+            .HasForeignKey(aa => aa.UsuarioId) // Explicitamente o nome da chave estrangeira
+            .HasPrincipalKey(a => a.UsuarioId); // Garante que o relacionamento seja baseado no campo correto
 
         base.OnModelCreating(modelBuilder);
     }
    
-    public DbSet<Produto> Produtos { get; set; }
-    public DbSet<ProdutoPedido> ProdutoPedidos { get; set; }
-   
-    public DbSet<Pedido> Pedidos { get; set; }
+    
 }

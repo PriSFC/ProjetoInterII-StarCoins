@@ -21,27 +21,6 @@ namespace StarCoins.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ProdutoPedido", b =>
-                {
-                    b.Property<int>("ProdutoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PedidoId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Moeda")
-                        .HasColumnType("float");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProdutoId", "PedidoId");
-
-                    b.HasIndex("PedidoId");
-
-                    b.ToTable("ProdutoPedidos");
-                });
-
             modelBuilder.Entity("StarCoins.Models.AlunoAtividade", b =>
                 {
                     b.Property<int>("AlunoAtividadeId")
@@ -50,17 +29,14 @@ namespace StarCoins.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AlunoAtividadeId"));
 
-                    b.Property<int>("AlunoUsuarioId")
-                        .HasColumnType("int");
-
                     b.Property<int>("AtividadeId")
                         .HasColumnType("int");
 
                     b.Property<DateOnly>("DataRealizacao")
                         .HasColumnType("date");
 
-                    b.Property<double>("Nota")
-                        .HasColumnType("float");
+                    b.Property<decimal?>("Nota")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
@@ -70,9 +46,9 @@ namespace StarCoins.Migrations
 
                     b.HasKey("AlunoAtividadeId");
 
-                    b.HasIndex("AlunoUsuarioId");
-
                     b.HasIndex("AtividadeId");
+
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("AlunoAtividades");
                 });
@@ -92,11 +68,8 @@ namespace StarCoins.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsFinalized")
-                        .HasColumnType("bit");
-
-                    b.Property<double>("Moeda")
-                        .HasColumnType("float");
+                    b.Property<int>("Moeda")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -118,14 +91,20 @@ namespace StarCoins.Migrations
                     b.Property<DateOnly>("DataPedido")
                         .HasColumnType("date");
 
-                    b.Property<double>("Moeda")
-                        .HasColumnType("float");
+                    b.Property<int>("Moeda")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProdutoId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Ticket")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
                     b.HasKey("PedidoId");
@@ -145,8 +124,8 @@ namespace StarCoins.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Moeda")
-                        .HasColumnType("float");
+                    b.Property<int>("Moeda")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -230,10 +209,6 @@ namespace StarCoins.Migrations
                 {
                     b.HasBaseType("StarCoins.Models.Usuario");
 
-                    b.Property<string>("Cargo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasDiscriminator().HasValue("AdministradorModel");
                 });
 
@@ -241,8 +216,8 @@ namespace StarCoins.Migrations
                 {
                     b.HasBaseType("StarCoins.Models.Usuario");
 
-                    b.Property<double>("Moeda")
-                        .HasColumnType("float");
+                    b.Property<int>("Moeda")
+                        .HasColumnType("int");
 
                     b.HasDiscriminator().HasValue("Aluno");
                 });
@@ -254,36 +229,17 @@ namespace StarCoins.Migrations
                     b.HasDiscriminator().HasValue("Professor");
                 });
 
-            modelBuilder.Entity("ProdutoPedido", b =>
-                {
-                    b.HasOne("StarCoins.Models.Pedido", "Pedido")
-                        .WithMany()
-                        .HasForeignKey("PedidoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("StarCoins.Models.Produto", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Pedido");
-
-                    b.Navigation("Produto");
-                });
-
             modelBuilder.Entity("StarCoins.Models.AlunoAtividade", b =>
                 {
-                    b.HasOne("StarCoins.Models.Aluno", "Aluno")
-                        .WithMany()
-                        .HasForeignKey("AlunoUsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("StarCoins.Models.Atividade", "Atividade")
                         .WithMany()
                         .HasForeignKey("AtividadeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StarCoins.Models.Aluno", "Aluno")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

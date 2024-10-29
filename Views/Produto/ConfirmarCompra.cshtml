@@ -1,0 +1,38 @@
+@model StarCoins.Models.Produto
+
+@{
+    ViewData["Title"] = "Confirmar Compra do Produto";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center">
+            <h2>Confirmar Compra</h2>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Produto: @Model.Nome</h4>
+            <p class="card-text">Descrição: @Model.Descricao</p>
+            <p class="card-text">Valor: <strong>@Model.Moeda.ToString("0.00") Moedas</strong></p>
+            <p class="card-text">Quantidade Disponível: @Model.Quantidade</p>
+
+            <form action="/produto/confirmarcompra/@Model.ProdutoId" method="POST" class="mt-4">
+                <input type="hidden" name="ProdutoId" value="@Model.ProdutoId" />
+                
+                <!-- Mensagem de confirmação -->
+                <div class="alert alert-warning text-center" role="alert">
+                    Tem certeza de que deseja comprar este produto?
+                </div>
+
+                <!-- Botão de confirmar compra -->
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary mx-2">Confirmar Compra</button>
+                    <!-- Botão de voltar -->
+                    <a class="btn btn-outline-secondary mx-2" href="/produto/read">Voltar</a>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-muted text-center">
+            Status: @Model.Status
+        </div>
+    </div>
+</div>
