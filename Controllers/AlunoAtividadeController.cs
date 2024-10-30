@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StarCoins.Models;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -111,6 +112,32 @@ namespace StarCoins.Controllers
                 _ => 0                  // Notas abaixo de 1 geram 0 moedas
             };
         }
+
+        // Lista todas as atividades e notas do aluno
+        [HttpGet]
+        public async Task<IActionResult> AlunoRead()
+        {
+            var alunoId = HttpContext.Session.GetInt32("userId"); // Certifique-se de que o userId é armazenado na sessão
+            var atividadesAluno = await db.AlunoAtividades
+                .Include(a => a.Atividade)
+                .Where(a => a.UsuarioId == alunoId) // Filtra apenas as atividades do aluno logado
+                .Select(a => new 
+                {
+                    a.Atividade,
+                    Nota = a.Nota.HasValue ? a.Nota.Value.ToString() : "Nota não atribuída"
+                })
+                .ToListAsync();
+
+            if (atividadesAluno == null || !atividadesAluno.Any())
+            {
+                return NotFound();
+            }
+
+            return View(atividadesAluno);
+        }
+
+
+
     }
 
 }

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\prisc\OneDrive\Área de Trabalho\ProjetoInterII\StarCoins
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/AlunoAtividade/AlunoRead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9BdGl2aWRhZGVcQWx1bm9SZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/AlunoAtividade/Read.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9BdGl2aWRhZGVcUmVhZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,16 +62,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDb25maXJtYXJDb21wcmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDcmVhdGUuY3NodG1s
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/CreateDigital.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDcmVhdGVEaWdpdGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/CreateFisico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDcmVhdGVGaXNpY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/Read.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xSZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xVcGRhdGUuY3NodG1s
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/UpdateDigital.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xVcGRhdGVEaWdpdGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/UpdateFisico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xVcGRhdGVGaXNpY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Shared/Error.cshtml]

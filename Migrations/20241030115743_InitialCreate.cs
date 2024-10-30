@@ -37,7 +37,7 @@ namespace StarCoins.Migrations
                     ProdutoId = table.Column<int>(type: "int", nullable: false),
                     DataPedido = table.Column<DateOnly>(type: "date", nullable: false),
                     Moeda = table.Column<int>(type: "int", nullable: false),
-                    Ticket = table.Column<int>(type: "int", nullable: false),
+                    Ticket = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -55,7 +55,10 @@ namespace StarCoins.Migrations
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Moeda = table.Column<int>(type: "int", nullable: false),
                     Quantidade = table.Column<int>(type: "int", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false)
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    TipoProduto = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
+                    TamanhoArquivo = table.Column<double>(type: "float", nullable: true),
+                    Peso = table.Column<decimal>(type: "decimal(18,2)", nullable: true)
                 },
                 constraints: table =>
                 {

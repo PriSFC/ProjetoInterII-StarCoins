@@ -12,7 +12,7 @@ public class StarCoinsDatabase: DbContext {
     public DbSet<Atividade> Atividades { get; set; }
     public DbSet<AlunoAtividade> AlunoAtividades { get; set; }
 
-    public DbSet<Produto> Produtos { get; set; }
+     public DbSet<Produto> Produtos { get; set; }
    
     public DbSet<Pedido> Pedidos { get; set; }
 
@@ -33,6 +33,12 @@ public class StarCoinsDatabase: DbContext {
             .WithMany() // Se necessário, especifique o nome da coleção
             .HasForeignKey(aa => aa.UsuarioId) // Explicitamente o nome da chave estrangeira
             .HasPrincipalKey(a => a.UsuarioId); // Garante que o relacionamento seja baseado no campo correto
+
+        //Configurações para Produto (Físico e Digital)
+        modelBuilder.Entity<Produto>()
+            .HasDiscriminator<string>("TipoProduto")
+            .HasValue<ProdutoFisico>("Fisico")
+            .HasValue<ProdutoDigital>("Digital");
 
         base.OnModelCreating(modelBuilder);
     }

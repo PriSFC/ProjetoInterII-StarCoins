@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace StarCoins.Migrations
 {
     [DbContext(typeof(StarCoinsDatabase))]
-    [Migration("20241028214534_InitialCreate")]
+    [Migration("20241030115743_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -104,8 +104,8 @@ namespace StarCoins.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Ticket")
-                        .HasColumnType("int");
+                    b.Property<string>("Ticket")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
@@ -140,9 +140,18 @@ namespace StarCoins.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
+                    b.Property<string>("TipoProduto")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
+
                     b.HasKey("ProdutoId");
 
                     b.ToTable("Produtos");
+
+                    b.HasDiscriminator<string>("TipoProduto").HasValue("Produto");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("StarCoins.Models.Turma", b =>
@@ -206,6 +215,26 @@ namespace StarCoins.Migrations
                     b.HasDiscriminator().HasValue("Usuario");
 
                     b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("StarCoins.Models.ProdutoDigital", b =>
+                {
+                    b.HasBaseType("StarCoins.Models.Produto");
+
+                    b.Property<double>("TamanhoArquivo")
+                        .HasColumnType("float");
+
+                    b.HasDiscriminator().HasValue("Digital");
+                });
+
+            modelBuilder.Entity("StarCoins.Models.ProdutoFisico", b =>
+                {
+                    b.HasBaseType("StarCoins.Models.Produto");
+
+                    b.Property<decimal>("Peso")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasDiscriminator().HasValue("Fisico");
                 });
 
             modelBuilder.Entity("StarCoins.Models.AdministradorModel", b =>
