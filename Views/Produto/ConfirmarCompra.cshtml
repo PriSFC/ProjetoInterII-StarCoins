@@ -9,10 +9,10 @@
         <div class="card-header text-center">
             <h2>Confirmar Compra</h2>
         </div>
-        <div class="card-body">
-            <h4 class="card-title">Produto: @Model.Nome</h4>
+        <div class="card-body text-center">
+            <h5 class="card-title">Produto: @Model.Nome</h5>
             <p class="card-text">Descrição: @Model.Descricao</p>
-            <p class="card-text">Valor: <strong>@Model.Moeda.ToString("0.00") Moedas</strong></p>
+            <p class="card-text">Valor: <strong>@Model.Moeda.ToString("00") Moedas</strong></p>
             <p class="card-text">Quantidade Disponível: @Model.Quantidade</p>
 
             <form action="/produto/confirmarcompra/@Model.ProdutoId" method="POST" class="mt-4">
@@ -27,7 +27,7 @@
                 <div class="d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary mx-2">Confirmar Compra</button>
                     <!-- Botão de voltar -->
-                    <a class="btn btn-outline-secondary mx-2" href="/produto/read">Voltar</a>
+                    <a class="btn btn-outline-secondary mx-2" href="/produto/comprar">Voltar</a>
                 </div>
             </form>
         </div>

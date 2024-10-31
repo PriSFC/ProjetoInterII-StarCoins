@@ -25,28 +25,10 @@
             <p class="card-text">Descrição: <span id="produtoDescricao">Descrição do Produto</span></p>
             <p class="card-text">Valor em Moedas: <span id="produtoMoeda">0</span></p>
 
-            <button class="btn btn-primary" onclick="gerarDocumento()">Baixar Detalhes</button>
             <a class="btn btn-outline-secondary" href="/pedido/read">Voltar</a>
         </div>
     </div>
 
-    <script>
-        function gerarDocumento() {
-            // Substitua pelos dados reais do pedido
-            const codigo = '123456'; // Código de exemplo
-            const alunoNome = document.getElementById('alunoNome').innerText;
-            const produtoNome = document.getElementById('produtoNome').innerText;
-
-            const conteudo = `Código: ${codigo}\nAluno: ${alunoNome}\nProduto: ${produtoNome}`;
-
-            // Criando o arquivo .txt
-            const blob = new Blob([conteudo], { type: 'text/plain' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'detalhes_pedido.txt';
-            link.click();
-        }
-    </script>
 
 </body>
 </html>

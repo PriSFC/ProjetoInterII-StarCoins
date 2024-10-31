@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
 using StarCoins.Models;
 using System.Linq;
 
@@ -107,5 +108,25 @@ namespace StarCoins.Controllers
             db.SaveChanges();
             return RedirectToAction("Read");
         }
+
+        [HttpGet]
+        public IActionResult ConfirmarComprar(int id)
+        {
+            Produto produto = db.Produtos.Single(e => e.ProdutoId == id);
+            if (produto is ProdutoFisico)
+            {
+                return View("ConfirmarCompra", produto); // Retorna a view para produto físico
+            }
+            else if (produto is ProdutoDigital)
+            {
+                return View("ConfirmarCompra", produto); // Retorna a view para produto digital
+            }
+            return NotFound();
+        }
+
+        //[HttpPost]
+        //public IActionResult AceitaComprar(int id)
+        //{
+
     }
 }
