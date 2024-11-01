@@ -18,4 +18,8 @@ public class Pedido {
     public string? Ticket { get; set; }
     public string Status { get; set; } //(1 - em andamento, 2 - concluído)
 
+    // Propriedades de navegação
+    public virtual Usuario Usuario { get; set; }
+    public virtual Produto Produto { get; set; }
+
 }

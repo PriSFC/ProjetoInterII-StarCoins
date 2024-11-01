@@ -25,7 +25,6 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Produto</th>
                     <th scope="col">Data do Pedido</th>
                     <th scope="col">Moeda</th>
                     <th scope="col">Status</th>
@@ -36,13 +35,12 @@
                 @foreach (var pedido in Model) {
                     <tr>
                         <td>@pedido.PedidoId</td> <!-- Presumindo que Pedido tem um PedidoId -->
-                        <td>@pedido.ProdutoId</td> <!-- Presumindo que Pedido tem uma relação com Produto -->
-                        <td>@pedido.DataPedido.ToShortDateString()</td> <!-- Exibe a data do pedido -->
+                        <td>@pedido.DataPedido.ToString("dd/MM/yyyy")</td> <!-- Exibe a data do pedido -->
                         <td>@pedido.Moeda</td>
                         <td>@pedido.Status</td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="/pedido/details/@pedido.PedidoId" class="btn btn-outline-info btn-sm"><i class="bi bi-eye"></i> Documento</a>
+                                <a href="/pedido/verificar/@pedido.PedidoId" class="btn btn-outline-info btn-sm"> Detalhe</a>
                             </div>
                         </td>
                     </tr>

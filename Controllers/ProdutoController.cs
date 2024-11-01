@@ -110,7 +110,7 @@ namespace StarCoins.Controllers
         }
 
         [HttpGet]
-        public IActionResult ConfirmarComprar(int id)
+        public IActionResult ConfirmarCompra(int id)
         {
             Produto produto = db.Produtos.Single(e => e.ProdutoId == id);
             if (produto is ProdutoFisico)
@@ -124,9 +124,53 @@ namespace StarCoins.Controllers
             return NotFound();
         }
 
-        //[HttpPost]
-        //public IActionResult AceitaComprar(int id)
-        //{
+            [HttpPost]
+            public async Task<IActionResult> PedidoCreate(int id)
+            {
+                // Verifica se o usuário está logado
+                var userId = HttpContext.Session.GetInt32("userId");
+                if (userId == null)
+                    return RedirectToAction("Login", "Usuario");
+
+                // Busca o produto pelo id do produto
+                var produto = await db.Produtos.FindAsync(id);
+                // Busca o aluno pelo id do usuário
+                var usuario = await db.Usuarios.FindAsync(userId);
+
+                // Verifica se o produto e o aluno foram encontrados
+                if (produto == null || usuario == null)
+                    return NotFound();
+
+                // Verifica se o usuário é do tipo Aluno
+                if (usuario is not Aluno aluno)
+                    return BadRequest("Apenas alunos podem realizar essa compra.");
+
+                // Verifica se o aluno tem moedas suficientes para realizar a compra
+                if (aluno.Moeda < produto.Moeda)
+                        return BadRequest("Saldo de moedas insuficiente para realizar a compra.");
+
+                // Cria o pedido com as informações fornecidas
+                var pedido = new Pedido
+                {
+                    UsuarioId = aluno.UsuarioId,
+                    ProdutoId = produto.ProdutoId,
+                    DataPedido = DateOnly.FromDateTime(DateTime.Now),
+                    Moeda = produto.Moeda, // Define o valor da moeda do produto no pedido
+                    Ticket = Guid.NewGuid().ToString(), // Gera um ticket único para o pedido
+                    Status = "1" // Status "1" para indicar "em andamento"
+                };
+
+                // Atualiza o saldo de moedas do aluno
+                aluno.Moeda -= produto.Moeda;
+                db.Usuarios.Update(aluno);
+
+                // Adiciona o pedido ao banco de dados e salva as alterações
+                db.Pedidos.Add(pedido);
+                await db.SaveChangesAsync();
+
+                // Redireciona para a página de verificação do pedido, passando o PedidoId
+                return RedirectToAction("Create", "Pedido", new { pedidoId = pedido.PedidoId });
+            }
 
     }
 }

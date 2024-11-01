@@ -12,10 +12,10 @@
         <div class="card-body text-center">
             <h5 class="card-title">Produto: @Model.Nome</h5>
             <p class="card-text">Descrição: @Model.Descricao</p>
-            <p class="card-text">Valor: <strong>@Model.Moeda.ToString("00") Moedas</strong></p>
+            <p class="card-text">Valor: <strong>@Model.Moeda Moedas</strong></p>
             <p class="card-text">Quantidade Disponível: @Model.Quantidade</p>
 
-            <form action="/produto/confirmarcompra/@Model.ProdutoId" method="POST" class="mt-4">
+            <form action="/produto/pedidocreate/@Model.ProdutoId" method="POST" class="mt-4">
                 <input type="hidden" name="ProdutoId" value="@Model.ProdutoId" />
                 
                 <!-- Mensagem de confirmação -->
@@ -23,8 +23,9 @@
                     Tem certeza de que deseja comprar este produto?
                 </div>
 
-                <!-- Botão de confirmar compra -->
+                
                 <div class="d-flex justify-content-center">
+                    <!-- Botão de confirmar compra -->
                     <button type="submit" class="btn btn-primary mx-2">Confirmar Compra</button>
                     <!-- Botão de voltar -->
                     <a class="btn btn-outline-secondary mx-2" href="/produto/comprar">Voltar</a>
