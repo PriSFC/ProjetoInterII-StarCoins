@@ -6,12 +6,9 @@ namespace StarCoins.Models;
 
 public class Pedido {
     
-    [Key]
     public int PedidoId { get; set; }
     public int UsuarioId { get; set; }
-    [ForeignKey("UsuarioId")]
     public int ProdutoId { get; set; }
-    [ForeignKey("ProdutoId")]
 
     public DateOnly DataPedido {get; set; }
     public int Moeda { get; set; }

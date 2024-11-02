@@ -28,24 +28,6 @@ namespace StarCoins.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Pedidos",
-                columns: table => new
-                {
-                    PedidoId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UsuarioId = table.Column<int>(type: "int", nullable: false),
-                    ProdutoId = table.Column<int>(type: "int", nullable: false),
-                    DataPedido = table.Column<DateOnly>(type: "date", nullable: false),
-                    Moeda = table.Column<int>(type: "int", nullable: false),
-                    Ticket = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Pedidos", x => x.PedidoId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Produtos",
                 columns: table => new
                 {
@@ -57,8 +39,8 @@ namespace StarCoins.Migrations
                     Quantidade = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     TipoProduto = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
-                    TamanhoArquivo = table.Column<double>(type: "float", nullable: true),
-                    Peso = table.Column<decimal>(type: "decimal(18,2)", nullable: true)
+                    TamanhoArquivo = table.Column<float>(type: "real", nullable: true),
+                    Peso = table.Column<float>(type: "real", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -127,6 +109,36 @@ namespace StarCoins.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Pedidos",
+                columns: table => new
+                {
+                    PedidoId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UsuarioId = table.Column<int>(type: "int", nullable: false),
+                    ProdutoId = table.Column<int>(type: "int", nullable: false),
+                    DataPedido = table.Column<DateOnly>(type: "date", nullable: false),
+                    Moeda = table.Column<int>(type: "int", nullable: false),
+                    Ticket = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Pedidos", x => x.PedidoId);
+                    table.ForeignKey(
+                        name: "FK_Pedidos_Produtos_ProdutoId",
+                        column: x => x.ProdutoId,
+                        principalTable: "Produtos",
+                        principalColumn: "ProdutoId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Pedidos_Usuarios_UsuarioId",
+                        column: x => x.UsuarioId,
+                        principalTable: "Usuarios",
+                        principalColumn: "UsuarioId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AlunoAtividades_AtividadeId",
                 table: "AlunoAtividades",
@@ -135,6 +147,16 @@ namespace StarCoins.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_AlunoAtividades_UsuarioId",
                 table: "AlunoAtividades",
+                column: "UsuarioId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Pedidos_ProdutoId",
+                table: "Pedidos",
+                column: "ProdutoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Pedidos_UsuarioId",
+                table: "Pedidos",
                 column: "UsuarioId");
         }
 
@@ -148,13 +170,13 @@ namespace StarCoins.Migrations
                 name: "Pedidos");
 
             migrationBuilder.DropTable(
-                name: "Produtos");
-
-            migrationBuilder.DropTable(
                 name: "Turmas");
 
             migrationBuilder.DropTable(
                 name: "Atividades");
+
+            migrationBuilder.DropTable(
+                name: "Produtos");
 
             migrationBuilder.DropTable(
                 name: "Usuarios");

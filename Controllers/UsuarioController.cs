@@ -79,7 +79,13 @@ public ActionResult Create(Usuario model)
     [HttpPost]
     public ActionResult Update(int id, Usuario model) {
 
-        var usuario = db.Usuarios.Single(e => e.UsuarioId == id);
+        var usuario = db.Usuarios.SingleOrDefault(e => e.UsuarioId == id);
+
+        // Verifica se o usuário foi encontrado
+        if (usuario == null)
+        {
+            return NotFound("Usuário não encontrado");
+        }
 
         usuario.Nome = model.Nome;
         usuario.Perfil = model.Perfil;
@@ -88,7 +94,7 @@ public ActionResult Create(Usuario model)
         
         db.SaveChanges();
 
-        return RedirectToAction("Read");
+        return RedirectToAction("Read", usuario);
 
     }
 

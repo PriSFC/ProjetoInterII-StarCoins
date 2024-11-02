@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
 using StarCoins.Models;
-using System.Linq;
 
 namespace StarCoins.Controllers
 {
@@ -84,7 +82,7 @@ namespace StarCoins.Controllers
         }
 
         [HttpPost]
-        public ActionResult Update(int id, Produto model)
+        public ActionResult UpdateDigital(int id, ProdutoDigital model)
         {
             var produto = db.Produtos.Single(e => e.ProdutoId == id);
 
@@ -94,20 +92,31 @@ namespace StarCoins.Controllers
             produto.Quantidade = model.Quantidade;
             produto.Status = model.Status;
 
-            // Se o produto for do tipo Fisico, atualiza propriedades específicas
-            if (produto is ProdutoFisico fisico)
-            {
-                fisico.Peso = ((ProdutoFisico)model).Peso;
-            }
-            // Se o produto for do tipo Digital, atualiza propriedades específicas
-            else if (produto is ProdutoDigital digital)
-            {
-                digital.TamanhoArquivo = ((ProdutoDigital)model).TamanhoArquivo;
-            }
+            if (produto is ProdutoDigital digital)
+            digital.TamanhoArquivo = model.TamanhoArquivo;
 
             db.SaveChanges();
             return RedirectToAction("Read");
         }
+
+        [HttpPost]
+        public ActionResult UpdateFisico(int id, ProdutoFisico model)
+        {
+            var produto = db.Produtos.Single(e => e.ProdutoId == id);
+
+            produto.Nome = model.Nome;
+            produto.Descricao = model.Descricao;
+            produto.Moeda = model.Moeda;
+            produto.Quantidade = model.Quantidade;
+            produto.Status = model.Status;
+
+            if (produto is ProdutoFisico fisico)
+            fisico.Peso = model.Peso;
+
+            db.SaveChanges();
+            return RedirectToAction("Read");
+        }
+
 
         [HttpGet]
         public IActionResult ConfirmarCompra(int id)
@@ -124,53 +133,57 @@ namespace StarCoins.Controllers
             return NotFound();
         }
 
-            [HttpPost]
-            public async Task<IActionResult> PedidoCreate(int id)
+        [HttpPost]
+        public async Task<IActionResult> PedidoCreate(int id)
+        {
+            // Verifica se o usuário está logado
+            var userId = HttpContext.Session.GetInt32("userId");
+            if (userId == null)
+                return RedirectToAction("Login", "Usuario");
+
+            // Busca o produto pelo id do produto
+            var produto = await db.Produtos.FindAsync(id);
+            // Busca o aluno pelo id do usuário
+            var usuario = await db.Usuarios.FindAsync(userId);
+
+            // Verifica se o produto e o aluno foram encontrados
+            if (produto == null || usuario == null)
+                return NotFound();
+
+            // Verifica se o usuário é do tipo Aluno
+            if (usuario is not Aluno aluno)
+                return BadRequest("Apenas alunos podem realizar essa compra.");
+
+            // Verifica se o aluno tem moedas suficientes para realizar a compra
+            if (aluno.Moeda < produto.Moeda)
+                    return BadRequest("Saldo de moedas insuficiente para realizar a compra.");
+
+            // Cria o pedido com as informações fornecidas
+            var pedido = new Pedido
             {
-                // Verifica se o usuário está logado
-                var userId = HttpContext.Session.GetInt32("userId");
-                if (userId == null)
-                    return RedirectToAction("Login", "Usuario");
+                UsuarioId = aluno.UsuarioId,
+                ProdutoId = produto.ProdutoId,
+                DataPedido = DateOnly.FromDateTime(DateTime.Now),
+                Moeda = produto.Moeda, // Define o valor da moeda do produto no pedido
+                Ticket = Guid.NewGuid().ToString(), // Gera um ticket único para o pedido
+                Status = "1" // Status "1" para indicar "em andamento"
+            };
 
-                // Busca o produto pelo id do produto
-                var produto = await db.Produtos.FindAsync(id);
-                // Busca o aluno pelo id do usuário
-                var usuario = await db.Usuarios.FindAsync(userId);
+            // Atualiza o saldo de moedas do aluno
+            aluno.Moeda -= produto.Moeda;
+            db.Usuarios.Update(aluno);
 
-                // Verifica se o produto e o aluno foram encontrados
-                if (produto == null || usuario == null)
-                    return NotFound();
+            // Atualiza a quantidade de produtos
+            produto.Quantidade -= 1;
+            db.Produtos.Update(produto);
 
-                // Verifica se o usuário é do tipo Aluno
-                if (usuario is not Aluno aluno)
-                    return BadRequest("Apenas alunos podem realizar essa compra.");
+            // Adiciona o pedido ao banco de dados e salva as alterações
+            db.Pedidos.Add(pedido);
+            await db.SaveChangesAsync();
 
-                // Verifica se o aluno tem moedas suficientes para realizar a compra
-                if (aluno.Moeda < produto.Moeda)
-                        return BadRequest("Saldo de moedas insuficiente para realizar a compra.");
-
-                // Cria o pedido com as informações fornecidas
-                var pedido = new Pedido
-                {
-                    UsuarioId = aluno.UsuarioId,
-                    ProdutoId = produto.ProdutoId,
-                    DataPedido = DateOnly.FromDateTime(DateTime.Now),
-                    Moeda = produto.Moeda, // Define o valor da moeda do produto no pedido
-                    Ticket = Guid.NewGuid().ToString(), // Gera um ticket único para o pedido
-                    Status = "1" // Status "1" para indicar "em andamento"
-                };
-
-                // Atualiza o saldo de moedas do aluno
-                aluno.Moeda -= produto.Moeda;
-                db.Usuarios.Update(aluno);
-
-                // Adiciona o pedido ao banco de dados e salva as alterações
-                db.Pedidos.Add(pedido);
-                await db.SaveChangesAsync();
-
-                // Redireciona para a página de verificação do pedido, passando o PedidoId
-                return RedirectToAction("Create", "Pedido", new { pedidoId = pedido.PedidoId });
-            }
+            // Redireciona para a página de verificação do pedido, passando o PedidoId
+            return RedirectToAction("Create", "Pedido", new { pedidoId = pedido.PedidoId });
+        }
 
     }
 }

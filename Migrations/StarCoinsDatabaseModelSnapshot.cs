@@ -109,6 +109,10 @@ namespace StarCoins.Migrations
 
                     b.HasKey("PedidoId");
 
+                    b.HasIndex("ProdutoId");
+
+                    b.HasIndex("UsuarioId");
+
                     b.ToTable("Pedidos");
                 });
 
@@ -218,8 +222,8 @@ namespace StarCoins.Migrations
                 {
                     b.HasBaseType("StarCoins.Models.Produto");
 
-                    b.Property<double>("TamanhoArquivo")
-                        .HasColumnType("float");
+                    b.Property<float>("TamanhoArquivo")
+                        .HasColumnType("real");
 
                     b.HasDiscriminator().HasValue("Digital");
                 });
@@ -228,8 +232,8 @@ namespace StarCoins.Migrations
                 {
                     b.HasBaseType("StarCoins.Models.Produto");
 
-                    b.Property<decimal>("Peso")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<float>("Peso")
+                        .HasColumnType("real");
 
                     b.HasDiscriminator().HasValue("Fisico");
                 });
@@ -275,6 +279,25 @@ namespace StarCoins.Migrations
                     b.Navigation("Aluno");
 
                     b.Navigation("Atividade");
+                });
+
+            modelBuilder.Entity("StarCoins.Models.Pedido", b =>
+                {
+                    b.HasOne("StarCoins.Models.Produto", "Produto")
+                        .WithMany()
+                        .HasForeignKey("ProdutoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StarCoins.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Produto");
+
+                    b.Navigation("Usuario");
                 });
 #pragma warning restore 612, 618
         }

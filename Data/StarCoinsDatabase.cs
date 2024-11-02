@@ -12,7 +12,7 @@ public class StarCoinsDatabase: DbContext {
     public DbSet<Atividade> Atividades { get; set; }
     public DbSet<AlunoAtividade> AlunoAtividades { get; set; }
 
-     public DbSet<Produto> Produtos { get; set; }
+    public DbSet<Produto> Produtos { get; set; }
    
     public DbSet<Pedido> Pedidos { get; set; }
 
