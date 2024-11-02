@@ -74,6 +74,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDcmVhdGVGaXNpY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/DetalhesProdutoDigital.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlc1Byb2R1dG9EaWdpdGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/DetalhesProdutoFisico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlc1Byb2R1dG9GaXNpY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/prisc/OneDrive/Área de Trabalho/ProjetoInterII/StarCoins/Views/Produto/Read.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xSZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

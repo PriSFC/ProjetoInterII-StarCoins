@@ -1,6 +1,6 @@
 namespace StarCoins.Models;
 
-public class Produto
+public abstract class Produto : IProduto
     {
         public int ProdutoId { get; set; }
         public string Nome { get; set; }
@@ -10,5 +10,5 @@ public class Produto
         public int Status { get; set; } // 1 - em estoque, 2 - esgotado, 3 - descontinuado, 4 - em trânsito
 
         // Método abstrato, deve ser implementado nas classes derivadas
-        //public abstract void ExibirDetalhes();
+        public abstract void ExibirDetalhes();
     }

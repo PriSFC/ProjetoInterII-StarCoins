@@ -22,7 +22,7 @@ namespace StarCoins.Controllers
         {
             return View(db.Produtos.ToList()); // ~ SELECT * FROM Produtos
         }
-
+        
         [HttpGet]
         public IActionResult CreateFisico()
         {
@@ -117,6 +117,31 @@ namespace StarCoins.Controllers
             return RedirectToAction("Read");
         }
 
+
+        public IActionResult ExibirDetalhes(int id)
+        {
+            // Buscar o produto no banco de dados pelo ID
+            var produto = db.Produtos.Single(e => e.ProdutoId == id);
+
+            if (produto == null)
+            {
+                return NotFound();
+            }
+
+            // Verificar o tipo de produto e chamar ExibirDetalhes
+            if (produto is ProdutoDigital produtoDigital)
+            {
+                produtoDigital.ExibirDetalhes();
+                return View("DetalhesProdutoDigital", produtoDigital); // Redireciona para a View específica
+            }
+            else if (produto is ProdutoFisico produtoFisico)
+            {
+                produtoFisico.ExibirDetalhes();
+                return View("DetalhesProdutoFisico", produtoFisico); // Redireciona para a View específica
+            }
+
+            return NotFound("Tipo de produto desconhecido.");
+        }
 
         [HttpGet]
         public IActionResult ConfirmarCompra(int id)
