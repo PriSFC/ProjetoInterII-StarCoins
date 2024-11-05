@@ -7,6 +7,13 @@
 <div class="text-center">
     <h2>Atividade: @Model.First().Atividade.Nome</h2>
 
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/atividade/read">Atividade</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Atribuir Notas</li>
+    </ol>
+    </nav>
+
     <form action="/AlunoAtividade/SalvarNotas" method="post">
         <input type="hidden" name="atividadeId" value="@Model.First().Atividade.AtividadeId" />
         <table class="table">
@@ -21,13 +28,21 @@
                 {
                     <tr>
                         <td>@alunoAtividade.Aluno.Nome</td>
-                        <td>
                             <input type="hidden" name="alunoAtividades[@alunoAtividade.AlunoAtividadeId].AlunoAtividadeId" 
                                 value="@alunoAtividade.AlunoAtividadeId" />
                             <input type="hidden" name="alunoAtividades[@alunoAtividade.AlunoAtividadeId].UsuarioId" 
                                 value="@alunoAtividade.UsuarioId" />
-                            <input type="number" step="0.1" name="alunoAtividades[@alunoAtividade.AlunoAtividadeId].Nota" 
-                                value="@alunoAtividade.Nota ?? 0" min="0.0" max="10" placeholder="0.0" required />
+                             <td>
+                            @if (alunoAtividade.Nota.HasValue)
+                            {
+                                <!-- Exibe a nota como texto quando já foi salva -->
+                                <span>@alunoAtividade.Nota.Value</span> <!-- Formata a nota para uma casa decimal -->
+                            }
+                            else
+                            {
+                               <input type="number" step="0.10" name="alunoAtividades[@alunoAtividade.AlunoAtividadeId].Nota" 
+                                value="@alunoAtividade.Nota ?? 0" min="0.00" max="10.00" placeholder="0.00" />
+                            }   
                         </td>
                     </tr>
                 }

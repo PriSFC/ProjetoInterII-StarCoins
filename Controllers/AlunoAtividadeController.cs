@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StarCoins.Models;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace StarCoins.Controllers
 {
@@ -115,7 +112,7 @@ namespace StarCoins.Controllers
 
         // Lista todas as atividades e notas do aluno
         [HttpGet]
-        public async Task<IActionResult> AlunoRead()
+        public async Task<IActionResult> AlunoRead() // Utilizado para o Usuário Aluno conseguir ver suas atividades e respectivas notas
         {
             var alunoId = HttpContext.Session.GetInt32("userId"); // Certifique-se de que o userId é armazenado na sessão
             var atividadesAluno = await db.AlunoAtividades
@@ -135,8 +132,6 @@ namespace StarCoins.Controllers
 
             return View(atividadesAluno);
         }
-
-
 
     }
 

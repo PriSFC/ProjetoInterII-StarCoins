@@ -23,11 +23,12 @@
                 <th scope="col">Login</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Senha</th>
-                <th scope="col"></th>
+                <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
-    @foreach(var usuario in Model) {
+
+        @foreach(var usuario in Model) {
         <tr>
             <td>@usuario.UsuarioId</td>
             <td>@usuario.Nome</td>
@@ -37,8 +38,8 @@
             <td>@usuario.Senha</td>
             <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="/usuario/update/@usuario.UsuarioId" button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-pencil-square"> Editar</a>
-                    <a href="/usuario/delete/@usuario.UsuarioId" button type="button" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Apagar</a>
+                    <a href="/usuario/update/@usuario.UsuarioId" button type="button" class="btn btn-outline-primary btn-sm"> Editar</a>
+                    <a href="/usuario/delete/@usuario.UsuarioId" button type="button" class="btn btn-outline-danger btn-sm"> Apagar</a>
                 </div>
             </td>
         </tr>

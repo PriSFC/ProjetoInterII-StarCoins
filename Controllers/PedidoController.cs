@@ -16,8 +16,8 @@ public class PedidoController : Controller {
     public async Task<IActionResult> Create(int pedidoId)
     {
         var pedido = await db.Pedidos
-            .Include(p => p.Produto)
-            .Include(p => p.Usuario)
+            .Include(p => p.Produto) // Inclui o Produto 
+            .Include(p => p.Usuario) // Inclui o Usuário
             .FirstOrDefaultAsync(p => p.PedidoId == pedidoId);
 
         if (pedido == null)
@@ -67,8 +67,5 @@ public class PedidoController : Controller {
 
         return View("Verificar", pedido);
     }
-
-
-
 
 }

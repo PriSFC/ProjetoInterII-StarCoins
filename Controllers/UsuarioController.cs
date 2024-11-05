@@ -123,7 +123,7 @@ public class UsuarioController : Controller {
         }
     }
     
-    // Método para verificar as informações do usuário logado
+    // Método para o usuário verificar as suas informações
     public ActionResult Verificar() {
         // Obtém o ID do usuário da sessão
         var userId = HttpContext.Session.GetInt32("userId");
@@ -142,13 +142,14 @@ public class UsuarioController : Controller {
         return View(usuario); // Retorna a view com as informações do usuário
     }
 
-    public ActionResult Logout() {
-    // Limpa a sessão do usuário
-    HttpContext.Session.Remove("userId");
-    HttpContext.Session.Remove("userName");
+        // Método para fazer o logout do usuário
+        public ActionResult Logout() {
+        // Limpa a sessão do usuário
+        HttpContext.Session.Remove("userId");
+        HttpContext.Session.Remove("userName");
 
-    // Redireciona para a página de login
-    return RedirectToAction("Login");
-}
+        // Redireciona para a página de login
+        return RedirectToAction("Login");
+    }
     
 }

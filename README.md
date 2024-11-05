@@ -1,3 +1,20 @@
+# Projeto Interdisciplinar II - 4º Semestre do Curso de Análise e Desenvolvimento de Sistemas - Fatec Rio Preto
+
+Disciplinas:
+- Engenharia de Software III
+- Programação Orientada a Objetos
+
+#Star Coins
+
+Integrantes:
+- Deivid
+- Pedro Arthur
+- Rafaela
+
+Objetivos:
+O objetivo da aplicação é oferecer um meio para compensar alunos por tarefas feitas. 
+A aplicação deve permitir que um professor atribua uma nota à atividade e esta nota é convertida em certa quantidade de moedas. No sistema o aluno poderá trocar suas moedas por algum produto. 
+
 # Referências:
 
 Bootstrap Icon
@@ -48,6 +65,3 @@ Atualiza o banco de dados com a migration:
 `dotnet ef database update`
 
 `dotnet ef database update --connection "Data Source=My.db"`
-
-input radio
-https://www.w3schools.com/tags/att_input_type_radio.asp

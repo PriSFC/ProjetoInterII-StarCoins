@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StarCoins.Models;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace StarCoins.Controllers
 {
@@ -119,5 +117,7 @@ namespace StarCoins.Controllers
 
             return RedirectToAction("Read");
         }
+
     }
+    
 }

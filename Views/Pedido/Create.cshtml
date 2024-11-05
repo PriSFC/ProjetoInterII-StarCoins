@@ -10,9 +10,10 @@
             <h2>Pedido Confirmado</h2>
         </div>
         <div class="card-body text-center">
-            <h5 class="card-title">Detalhes do Pedido</h5>
+            <h5 class="card-title">Detalhes do Pedido Confirmado</h5>
             <p class="card-text">Código do Pedido: <strong>@Model.Ticket</strong></p>
             <p class="card-text">Produto: <strong>@Model.Produto.Nome</strong></p>
+            <p class="card-text">Descrição: <strong>@Model.Produto.Descricao</strong></p>
             <p class="card-text">Aluno: <strong>@Model.Usuario.Nome</strong></p>
             <p class="card-text">Data da Compra: <strong>@Model.DataPedido.ToString("dd/MM/yyyy")</strong></p>
             <p class="card-text">Valor da Compra: <strong>@Model.Moeda Moedas</strong></p>
