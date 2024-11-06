@@ -22,37 +22,41 @@
     <form asp-action="CreateFisico" method="POST" class="col offset-md-2 col-8">
         <!-- Campos comuns -->
         <div class="mb-3">
-            <label for="Nome" class="form-label">Nome</label>
+            <label for="Nome" class="form-label">Nome*</label>
             <input type="text" name="Nome" placeholder="Digite o Nome" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Nome)<br>
         </div>
         
         <div class="mb-3">
-            <label for="Descricao" class="form-label">Descrição</label>
+            <label for="Descricao" class="form-label">Descrição*</label>
             <input type="text" name="Descricao" placeholder="Digite a Descrição" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Descricao)<br>
         </div>
         
         <div class="mb-3">
-            <label for="Moeda" class="form-label">Moedas</label>
+            <label for="Moeda" class="form-label">Moedas*</label>
             <input type="number" name="Moeda" placeholder="Digite o Valor em Moedas" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Moeda)<br>
         </div>
         
         <div class="mb-3">
-            <label for="Quantidade" class="form-label">Quantidade</label>
+            <label for="Quantidade" class="form-label">Quantidade*</label>
             <input type="number" name="Quantidade" placeholder="Digite a Quantidade" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Quantidade)<br>
         </div>
 
         <div class="mb-3">
-            <label for="Status" class="form-label">Status</label>
-            <input type="number" name="Status" placeholder="Escolha o Status" class="form-control" />
+            <label for="Status" class="form-label">Status*</label>
+            <input type="number" name="Status" placeholder="Escolha o Status (1 - em estoque, 2 - esgotado, 3 - descontinuado, 4 - em trânsito)" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Status)<br>
         </div>
 
         <!-- Campo específico de produto físico -->
         <div class="mb-3">
-            <label for="Peso" class="form-label">Peso (gramas)</label>
+            <label for="Peso" class="form-label">Peso (gramas)*</label>
             <input type="number" name="Peso" placeholder="Digite o Peso" class="form-control" />
-        </div>
-
-        
+            @Html.ValidationMessageFor(x => x.Peso)<br>
+        </div>       
 
         <button type="submit" class="btn btn-primary">Salvar</button>
         <a class="btn btn-outline-secondary" href="/produto/read">Voltar</a>

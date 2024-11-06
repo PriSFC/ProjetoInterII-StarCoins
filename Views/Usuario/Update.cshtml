@@ -1,5 +1,6 @@
 @model StarCoins.Models.Usuario
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,22 +16,40 @@
 
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="usuario/read/">Usuário</a></li>
+        <li class="breadcrumb-item"><a href="/usuario/read">Usuário</a></li>
         <li class="breadcrumb-item active" aria-current="page">Editar Usuário</li>
     </ol>
     </nav>
 
     <form action="/usuario/update/@Model.UsuarioId" method="POST" class="col offset-md-2 col-8"> 
-        <th scope="col">Nome</th>
-        <input placeholder="Nome" name="Nome" class="form-control" value="@Model.Nome"/><br>
-        <th scope="col">Perfil</th>
-        <input placeholder="Perfil" name="Perfil" class="form-control" value="@Model.Perfil"/><br>
-        <th scope="col">Login</th>
-        <input placeholder="Login" name="Login" class="form-control" value="@Model.Login"/><br>
-        <th scope="col">E-mail</th>
-        <input placeholder="E-mail" name="Email" class="form-control" value="@Model.Email"/><br>
-        <th scope="col">Senha</th>
-        <input placeholder="Senha" name="Senha" class="form-control" value="@Model.Senha"/><br>
+        @Html.HiddenFor(model => model.UsuarioId)
+        <div>
+            <th scope="col">Nome*</th>
+            <input placeholder="Nome" name="Nome" class="form-control" value="@Model.Nome"/>
+            @Html.ValidationMessageFor(x => x.Nome)<br>
+        </div>
+        <div>
+            <th scope="col">Perfil*</th>
+            <input placeholder="Perfil" name="Perfil" class="form-control" value="@Model.Perfil"/>
+            @Html.ValidationMessageFor(x => x.Perfil)<br>
+        </div>
+        <div>
+            <th scope="col">Login*</th>
+            <input placeholder="Login" name="Login" class="form-control" value="@Model.Login"/>
+            @Html.ValidationMessageFor(x => x.Login)<br>
+        </div>
+        <div>
+            <th scope="col">E-mail*</th>
+            <input placeholder="E-mail" name="Email" class="form-control" value="@Model.Email"/>
+            @Html.ValidationMessageFor(x => x.Email)<br>
+        </div>
+        <div>
+            <th scope="col">Senha*</th>
+            <input placeholder="Senha" name="Senha" class="form-control" value="@Model.Senha"/>
+            @Html.ValidationMessageFor(x => x.Senha)<br>
+        </div>
+        
+        <br>
         <button class="btn btn-primary">Salvar</button>
         <a class="btn btn-outline-secondary" href="/usuario/read">Voltar</a>
     </form>

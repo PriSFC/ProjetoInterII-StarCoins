@@ -39,18 +39,24 @@ namespace StarCoins.Controllers
         [HttpPost]
         public ActionResult CreateFisico(ProdutoFisico model)
         {
-            db.Produtos.Add(model); // ~INSERT INTO Produtos VALUES (model.Nome...)
-            db.SaveChanges(); // ~commit
-            return RedirectToAction("Read");
+            if (ModelState.IsValid){
+                db.Produtos.Add(model); // ~INSERT INTO Produtos VALUES (model.Nome...)
+                db.SaveChanges(); // ~commit
+                return RedirectToAction("Read");
+            }
+            return View(model);
         }
 
         // Criar produtos digitais
         [HttpPost]
         public ActionResult CreateDigital(ProdutoDigital model)
         {
-            db.Produtos.Add(model); // ~INSERT INTO Produtos VALUES (model.Nome...)
-            db.SaveChanges(); // ~commit
-            return RedirectToAction("Read");
+            if (ModelState.IsValid){
+                db.Produtos.Add(model); // ~INSERT INTO Produtos VALUES (model.Nome...)
+                db.SaveChanges(); // ~commit
+                return RedirectToAction("Read");
+            }
+            return View(model);
         }
 
         public ActionResult Delete(int id)
@@ -78,46 +84,53 @@ namespace StarCoins.Controllers
             }
 
             // Se não for nenhum dos tipos, pode-se redirecionar ou lançar uma exceção
-            return NotFound(); // Ou outra lógica apropriada
+            return NotFound(); 
         }
 
         [HttpPost]
         public ActionResult UpdateDigital(int id, ProdutoDigital model)
         {
-            var produto = db.Produtos.Single(e => e.ProdutoId == id);
+            if (ModelState.IsValid){
+                var produto = db.Produtos.Single(e => e.ProdutoId == id);
 
-            produto.Nome = model.Nome;
-            produto.Descricao = model.Descricao;
-            produto.Moeda = model.Moeda;
-            produto.Quantidade = model.Quantidade;
-            produto.Status = model.Status;
+                produto.Nome = model.Nome;
+                produto.Descricao = model.Descricao;
+                produto.Moeda = model.Moeda;
+                produto.Quantidade = model.Quantidade;
+                produto.Status = model.Status;
 
-            if (produto is ProdutoDigital digital)
-            digital.TamanhoArquivo = model.TamanhoArquivo;
+                if (produto is ProdutoDigital digital)
+                digital.TamanhoArquivo = model.TamanhoArquivo;
 
-            db.SaveChanges();
-            return RedirectToAction("Read");
+                db.SaveChanges();
+                return RedirectToAction("Read");
+            }
+
+            return View(model);
         }
 
         [HttpPost]
         public ActionResult UpdateFisico(int id, ProdutoFisico model)
         {
-            var produto = db.Produtos.Single(e => e.ProdutoId == id);
+            if (ModelState.IsValid){
+                var produto = db.Produtos.Single(e => e.ProdutoId == id);
 
-            produto.Nome = model.Nome;
-            produto.Descricao = model.Descricao;
-            produto.Moeda = model.Moeda;
-            produto.Quantidade = model.Quantidade;
-            produto.Status = model.Status;
+                produto.Nome = model.Nome;
+                produto.Descricao = model.Descricao;
+                produto.Moeda = model.Moeda;
+                produto.Quantidade = model.Quantidade;
+                produto.Status = model.Status;
 
-            if (produto is ProdutoFisico fisico)
-            fisico.Peso = model.Peso;
+                if (produto is ProdutoFisico fisico)
+                fisico.Peso = model.Peso;
 
-            db.SaveChanges();
-            return RedirectToAction("Read");
+                db.SaveChanges();
+                return RedirectToAction("Read");
+            }
+            return View(model);
         }
 
-
+        [HttpGet]
         public IActionResult ExibirDetalhes(int id)
         {
             // Buscar o produto no banco de dados pelo ID

@@ -15,6 +15,10 @@ Objetivos:
 O objetivo da aplicação é oferecer um meio para compensar alunos por tarefas feitas. 
 A aplicação deve permitir que um professor atribua uma nota à atividade e esta nota é convertida em certa quantidade de moedas. No sistema o aluno poderá trocar suas moedas por algum produto. 
 
+Telas
+
+Diagrama do Banco de Dados
+
 # Referências:
 
 Bootstrap Icon

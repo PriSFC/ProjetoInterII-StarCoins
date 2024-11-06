@@ -2,6 +2,7 @@ namespace StarCoins.Models;
 
  public class ProdutoDigital : Produto, IProduto
     {
+      
         public float TamanhoArquivo { get; set; } // Propriedade específica de um produto digital
 
          public override void ExibirDetalhes()

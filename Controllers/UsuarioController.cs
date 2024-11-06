@@ -26,32 +26,37 @@ public class UsuarioController : Controller {
     [HttpPost]
     public ActionResult Create(Usuario model)
     {
-        // Verifica se o perfil é "Aluno" para criar uma instância do tipo Aluno
-        if (model.Perfil == "Aluno")
-        {
-            // Cria uma instância de Aluno e define as propriedades compartilhadas
-            var aluno = new Aluno
+        
+        // Verifica se os dados do modelo são válidos de acordo com as regras de validação definidas
+        if (ModelState.IsValid){
+            // Verifica se o perfil é "Aluno" para criar uma instância do tipo Aluno
+            if (model.Perfil == "Aluno")
             {
-                UsuarioId = model.UsuarioId, // Presumindo que o ID seja gerado ou atribuído
-                Nome = model.Nome,
-                Login = model.Login,
-                Email = model.Email,
-                Senha = model.Senha,
-                Perfil = model.Perfil,
-                Moeda = 30 // Define as moedas iniciais para o aluno
-            };
+                // Cria uma instância de Aluno e define as propriedades compartilhadas
+                var aluno = new Aluno
+                {
+                    UsuarioId = model.UsuarioId, // Presumindo que o ID seja gerado ou atribuído
+                    Nome = model.Nome,
+                    Login = model.Login,
+                    Email = model.Email,
+                    Senha = model.Senha,
+                    Perfil = model.Perfil,
+                    Moeda = 10 // Define as moedas iniciais para o aluno
+                };
 
-            db.Usuarios.Add(aluno); // Adiciona o objeto Aluno ao banco de dados
+                db.Usuarios.Add(aluno); // Adiciona o objeto Aluno ao banco de dados
+            }
+            else
+            {
+                // Adiciona o objeto Usuario para perfis diferentes de "Aluno"
+                db.Usuarios.Add(model);
+            }
+
+            db.SaveChanges(); // ~commit
+
+            return RedirectToAction("Read");
         }
-        else
-        {
-            // Adiciona o objeto Usuario para perfis diferentes de "Aluno"
-            db.Usuarios.Add(model);
-        }
-
-        db.SaveChanges(); // ~commit
-
-        return RedirectToAction("Read");
+        return View(model);
     }
 
 
@@ -78,23 +83,29 @@ public class UsuarioController : Controller {
 
     [HttpPost]
     public ActionResult Update(int id, Usuario model) {
+        
+        if (ModelState.IsValid){
+            var usuario = db.Usuarios.SingleOrDefault(e => e.UsuarioId == id);
 
-        var usuario = db.Usuarios.SingleOrDefault(e => e.UsuarioId == id);
+            // Verifica se o usuário foi encontrado
+            if (usuario == null)
+            {
+                return NotFound("Usuário não encontrado");
+            }
 
-        // Verifica se o usuário foi encontrado
-        if (usuario == null)
-        {
-            return NotFound("Usuário não encontrado");
+            usuario.Nome = model.Nome;
+            usuario.Perfil = model.Perfil;
+            usuario.Login = model.Login;
+            usuario.Senha = model.Senha;
+            
+            db.SaveChanges();
+
+            return RedirectToAction("Read", usuario);
         }
 
-        usuario.Nome = model.Nome;
-        usuario.Perfil = model.Perfil;
-        usuario.Login = model.Login;
-        usuario.Senha = model.Senha;
-        
-        db.SaveChanges();
-
-        return RedirectToAction("Read", usuario);
+        // Passa o id para a view para que possa ser usado no formulário
+        ViewBag.Id = id;
+        return View(model);
 
     }
 

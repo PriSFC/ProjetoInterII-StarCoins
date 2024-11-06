@@ -20,21 +20,40 @@
     </nav>
 
     <form action="/produto/updateDigital/@Model.ProdutoId" method="POST" class="col offset-md-2 col-8">
-        <th scope="col">Nome</th>
-        <input placeholder="Nome" name="Nome" class="form-control" value="@Model.Nome"/><br>
-        <th scope="col">Descrição</th>
-        <input placeholder="Descrição" name="Descricao" class="form-control" value="@Model.Descricao"/><br>
-        <th scope="col">Quantidade</th>
-        <input placeholder="Quantidade" name="Quantidade" class="form-control" value="@Model.Quantidade"/><br>
-        <th scope="col">Moeda</th>
-        <input placeholder="Moeda" name="Moeda" class="form-control" value="@Model.Moeda"/><br>
-        <th scope="col">Status</th>
-        <input placeholder="Status" name="Status" class="form-control" value="@Model.Status"/><br>
+        @Html.HiddenFor(model => model.ProdutoId)
+        <div>
+            <th scope="col">Nome*</th>
+            <input placeholder="Nome" name="Nome" class="form-control" value="@Model.Nome"/>
+            @Html.ValidationMessageFor(x => x.Nome)<br>
+        </div>
+        <div>
+            <th scope="col">Descrição*</th>
+            <input placeholder="Descrição" name="Descricao" class="form-control" value="@Model.Descricao"/>
+            @Html.ValidationMessageFor(x => x.Descricao)<br>
+        </div>
+        <div>
+            <th scope="col">Quantidade*</th>
+            <input placeholder="Quantidade" name="Quantidade" class="form-control" value="@Model.Quantidade"/>
+            @Html.ValidationMessageFor(x => x.Quantidade)<br>
+        </div>
+        <div>
+            <th scope="col">Moeda*</th>
+            <input placeholder="Moeda" name="Moeda" class="form-control" value="@Model.Moeda"/>
+            @Html.ValidationMessageFor(x => x.Moeda)<br>
+        </div>
+        <div>
+            <th scope="col">Status*</th>
+            <input placeholder="Status" name="Status" class="form-control" value="@Model.Status"/>
+            @Html.ValidationMessageFor(x => x.Status)<br>
+        </div>
         
-        <!-- Campo específico para produto digital -->
-        <th scope="col">Tamanho do arquivo (MB)</th>
-        <input placeholder="TamanhoArquivo" name="TamanhoArquivo" class="form-control" value="@Model.TamanhoArquivo"/><br>
-
+        <div>
+            <!-- Campo específico para produto digital -->
+            <th scope="col">Tamanho do arquivo (MB)*</th>
+            <input placeholder="TamanhoArquivo" name="TamanhoArquivo" class="form-control" value="@Model.TamanhoArquivo"/>
+            @Html.ValidationMessageFor(x => x.TamanhoArquivo)<br>
+        </div>
+        
         <button class="btn btn-primary">Salvar</button>
         <a class="btn btn-outline-secondary" href="/produto/read">Voltar</a>
     </form>

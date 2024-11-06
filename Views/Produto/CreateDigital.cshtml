@@ -1,3 +1,5 @@
+@model ProdutoDigital;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,34 +22,40 @@
     <form asp-action="CreateDigital" method="POST" class="col offset-md-2 col-8">
         <!-- Campos comuns -->
         <div class="mb-3">
-            <label for="Nome" class="form-label">Nome</label>
+            <label for="Nome" class="form-label">Nome*</label>
             <input type="text" name="Nome" placeholder="Digite o Nome" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Nome)<br>
         </div>
         
         <div class="mb-3">
-            <label for="Descricao" class="form-label">Descrição</label>
+            <label for="Descricao" class="form-label">Descrição*</label>
             <input type="text" name="Descricao" placeholder="Digite a Descrição" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Descricao)<br>
         </div>
         
         <div class="mb-3">
-            <label for="Moeda" class="form-label">Moedas</label>
+            <label for="Moeda" class="form-label">Moedas*</label>
             <input type="number" name="Moeda" placeholder="Digite o Valor em Moedas" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Moeda)<br>
         </div>
         
         <div class="mb-3">
-            <label for="Quantidade" class="form-label">Quantidade</label>
+            <label for="Quantidade" class="form-label">Quantidade*</label>
             <input type="number" name="Quantidade" placeholder="Digite a Quantidade" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Quantidade)<br>
         </div>
 
         <div class="mb-3">
-            <label for="Status" class="form-label">Status</label>
-            <input type="number" name="Status" placeholder="Escolha o Status" class="form-control" />
+            <label for="Status" class="form-label">Status*</label>
+            <input type="number" name="Status" placeholder="Escolha o Status (1 - em estoque, 2 - esgotado, 3 - descontinuado, 4 - em trânsito)" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Status)<br>
         </div>
 
         <!-- Campo específico de produto digital -->
         <div class="mb-3">
-            <label for="TamanhoArquivo" class="form-label">Tamanho do Arquivo (MB)</label>
+            <label for="TamanhoArquivo" class="form-label">Tamanho do Arquivo (MB)*</label>
             <input type="number" name="TamanhoArquivo" placeholder="Digite o Tamanho do Arquivo" class="form-control" />
+            @Html.ValidationMessageFor(x => x.TamanhoArquivo)<br>
         </div>
 
         

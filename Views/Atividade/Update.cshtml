@@ -21,14 +21,28 @@
     </nav>
 
     <form action="/atividade/update/@Model.AtividadeId" method="POST" class="col offset-md-2 col-8"> 
-        <th scope="col">Nome</th>
-        <input placeholder="Nome" name="Nome" class="form-control" value="@Model.Nome"/><br>
-        <th scope="col">Descrição</th>
-        <input placeholder="Descricao" name="Descricao" class="form-control" value="@Model.Descricao"/><br>
-        <th scope="col">Moeda</th>
-        <input placeholder="Moeda" name="Moeda" class="form-control" value="@Model.Moeda"/><br>
-        <th scope="col">Data de Entrega</th>
-        <input placeholder="DataEntrega" name="DataEntrega" class="form-control" type="date" value="@Model.DataEntrega.ToString("dd-MM-yyyy")"/><br>
+        @Html.HiddenFor(model => model.AtividadeId)
+        <div>
+            <th scope="col">Nome*</th>
+            <input placeholder="Nome" name="Nome" class="form-control" value="@Model.Nome" />
+            @Html.ValidationMessageFor(x => x.Nome)<br>
+        </div>
+        <div>
+            <th scope="col">Descrição*</th>
+            <input placeholder="Descricao" name="Descricao" class="form-control" value="@Model.Descricao"/>
+            @Html.ValidationMessageFor(x => x.Descricao)<br>
+        </div>
+        <div>
+            <th scope="col">Moeda*</th>
+            <input placeholder="Moeda" name="Moeda" class="form-control" value="@Model.Moeda"/>
+            @Html.ValidationMessageFor(x => x.Moeda)<br>
+        </div>
+        <div>
+            <th scope="col">Data de Entrega*</th>
+            <input placeholder="DataEntrega" name="DataEntrega" class="form-control" type="date" value="@Model.DataEntrega.ToString("yyyy-MM-dd")"/>
+            @Html.ValidationMessageFor(x => x.DataEntrega)<br>
+        </div>
+        
         <button class="btn btn-primary">Salvar</button>
         <a class="btn btn-outline-secondary" href="/atividade/read">Voltar</a>
     </form>
