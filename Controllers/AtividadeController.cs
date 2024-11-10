@@ -24,6 +24,7 @@ namespace StarCoins.Controllers
             return View();
         }
 
+        // Criar nova atividade e já fazer a associação com todos os alunos registrados no banco de dados
         [HttpPost]
         public async Task<ActionResult> Create(Atividade model)
         {
@@ -77,7 +78,7 @@ namespace StarCoins.Controllers
                 // Redireciona o usuário para a ação "Read", que possivelmente exibe a lista de atividades criadas
                 return RedirectToAction("Read");
             }
-
+            
             // Caso os dados do modelo não sejam válidos, retorna à view com o modelo para que o usuário corrija os erros
             return View(model);
         }
@@ -106,18 +107,21 @@ namespace StarCoins.Controllers
         [HttpPost]
         public ActionResult Update(int id, Atividade model)
         {
-            var atividade = db.Atividades.Single(e => e.AtividadeId == id);
+            if (ModelState.IsValid){
+                var atividade = db.Atividades.Single(e => e.AtividadeId == id);
 
-            atividade.Nome = model.Nome;
-            atividade.Descricao = model.Descricao;
-            atividade.DataEntrega = model.DataEntrega;
-            atividade.Moeda = model.Moeda;
+                atividade.Nome = model.Nome;
+                atividade.Descricao = model.Descricao;
+                atividade.DataEntrega = model.DataEntrega;
+                atividade.Moeda = model.Moeda;
 
-            db.SaveChanges();
+                db.SaveChanges();
 
-            return RedirectToAction("Read");
+                return RedirectToAction("Read");
+            }
+            // Passa o id para a view para que possa ser usado no formulário
+            ViewBag.Id = id;
+            return View(model);
         }
-
     }
-    
 }

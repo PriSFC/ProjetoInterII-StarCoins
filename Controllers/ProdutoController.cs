@@ -1,3 +1,4 @@
+using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
 using StarCoins.Models;
 
@@ -13,11 +14,13 @@ namespace StarCoins.Controllers
             this.db = db;
         }
 
+        // Produtos para o Adm
         public ActionResult Read()
         {
             return View(db.Produtos.ToList()); // ~ SELECT * FROM Produtos
         }
 
+        // Método de Comprar para o Aluno - Lista de Produtos
         public ActionResult Comprar()
         {
             return View(db.Produtos.ToList()); // ~ SELECT * FROM Produtos
@@ -105,7 +108,8 @@ namespace StarCoins.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Read");
             }
-
+            // Passa o id para a view para que possa ser usado no formulário
+            ViewBag.Id = id;
             return View(model);
         }
 
@@ -127,9 +131,12 @@ namespace StarCoins.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Read");
             }
+            // Passa o id para a view para que possa ser usado no formulário
+            ViewBag.Id = id;
             return View(model);
         }
 
+        // Detalhe do Produto para Aluno
         [HttpGet]
         public IActionResult ExibirDetalhes(int id)
         {
@@ -145,12 +152,12 @@ namespace StarCoins.Controllers
             if (produto is ProdutoDigital produtoDigital)
             {
                 produtoDigital.ExibirDetalhes();
-                return View("DetalhesProdutoDigital", produtoDigital); // Redireciona para a View específica
+                return View("DetalhesProdutoDigital", produtoDigital); // Redireciona para a View do Produto Digital
             }
             else if (produto is ProdutoFisico produtoFisico)
             {
                 produtoFisico.ExibirDetalhes();
-                return View("DetalhesProdutoFisico", produtoFisico); // Redireciona para a View específica
+                return View("DetalhesProdutoFisico", produtoFisico); // Redireciona para a View do Produto Físico
             }
 
             return NotFound("Tipo de produto desconhecido.");
@@ -162,11 +169,11 @@ namespace StarCoins.Controllers
             Produto produto = db.Produtos.Single(e => e.ProdutoId == id);
             if (produto is ProdutoFisico)
             {
-                return View("ConfirmarCompra", produto); // Retorna a view para produto físico
+                return View("ConfirmarCompra", produto); // Retorna a view para produto físico espeçifico
             }
             else if (produto is ProdutoDigital)
             {
-                return View("ConfirmarCompra", produto); // Retorna a view para produto digital
+                return View("ConfirmarCompra", produto); // Retorna a view para produto digital específico
             }
             return NotFound();
         }
@@ -194,7 +201,7 @@ namespace StarCoins.Controllers
 
             // Verifica se o aluno tem moedas suficientes para realizar a compra
             if (aluno.Moeda < produto.Moeda)
-                    return BadRequest("Saldo de moedas insuficiente para realizar a compra.");
+                return View("SaldoInsuficiente", produto);
 
             // Cria o pedido com as informações fornecidas
             var pedido = new Pedido

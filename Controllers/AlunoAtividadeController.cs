@@ -39,7 +39,7 @@ namespace StarCoins.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            // Recupera a atividade específica junto com os alunos vinculados para edição
+            // Recupera a atividade específica junto com os alunos vinculados para edição única
             var atividadeDetalhes = await db.AlunoAtividades
                 .Include(a => a.Aluno) // Inclui os detalhes dos alunos
                 .Include(a => a.Atividade) // Inclui os detalhes da atividade
@@ -112,7 +112,8 @@ namespace StarCoins.Controllers
 
         // Lista todas as atividades e notas do aluno
         [HttpGet]
-        public async Task<IActionResult> AlunoRead() // Utilizado para o Usuário Aluno conseguir ver suas atividades e respectivas notas
+        public async Task<IActionResult> AlunoRead() // Utilizado para o Usuário Aluno conseguir ver suas atividades e 
+        //respectivas notas
         {
             var alunoId = HttpContext.Session.GetInt32("userId"); // Certifique-se de que o userId é armazenado na sessão
             var atividadesAluno = await db.AlunoAtividades

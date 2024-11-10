@@ -6,7 +6,7 @@ namespace StarCoins.Controllers;
 // http://localhost:????/usuario
 public class UsuarioController : Controller {
 
-    private readonly StarCoinsDatabase db;
+    private readonly StarCoinsDatabase db; // banco de dados
 
     public UsuarioController(StarCoinsDatabase db) {
         this.db = db;
@@ -27,7 +27,7 @@ public class UsuarioController : Controller {
     public ActionResult Create(Usuario model)
     {
         
-        // Verifica se os dados do modelo são válidos de acordo com as regras de validação definidas
+        // Verifica se os dados do modelo são válidos de acordo com as regras de validação definidas no UsuarioModel
         if (ModelState.IsValid){
             // Verifica se o perfil é "Aluno" para criar uma instância do tipo Aluno
             if (model.Perfil == "Aluno")
@@ -35,7 +35,7 @@ public class UsuarioController : Controller {
                 // Cria uma instância de Aluno e define as propriedades compartilhadas
                 var aluno = new Aluno
                 {
-                    UsuarioId = model.UsuarioId, // Presumindo que o ID seja gerado ou atribuído
+                    UsuarioId = model.UsuarioId, 
                     Nome = model.Nome,
                     Login = model.Login,
                     Email = model.Email,
@@ -56,6 +56,7 @@ public class UsuarioController : Controller {
 
             return RedirectToAction("Read");
         }
+        
         return View(model);
     }
 
@@ -67,14 +68,14 @@ public class UsuarioController : Controller {
         // db.Entry<Usuario>(usuario).State = Microsoft.EntityFrameworkCore.EntityState.Deleted; // código igual ao de cima
         db.SaveChanges(); // commit
         
-
-
         // redirecionar para a página de read novamente
         return RedirectToAction("Read");
     }
 
+    // Editar um usuário específico
+    
     [HttpGet]
-    public ActionResult Update(int id)
+    public ActionResult Update(int id) // UsuarioId
     {
         Usuario usuario = db.Usuarios.Single(e => e.UsuarioId == id);
 
@@ -109,6 +110,7 @@ public class UsuarioController : Controller {
 
     }
 
+    // Usuário realizar Login
     public ActionResult Login() {
         return View();
     }
@@ -153,8 +155,8 @@ public class UsuarioController : Controller {
         return View(usuario); // Retorna a view com as informações do usuário
     }
 
-        // Método para fazer o logout do usuário
-        public ActionResult Logout() {
+    // Método para fazer o logout do usuário
+    public ActionResult Logout() {
         // Limpa a sessão do usuário
         HttpContext.Session.Remove("userId");
         HttpContext.Session.Remove("userName");
