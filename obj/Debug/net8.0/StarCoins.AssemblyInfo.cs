@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StarCoins")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faef665b1c991dba60980080d4bc5947138d4913")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7b10379e54a84a79b0a7ae8fcdf51e7c9464f4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarCoins")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarCoins")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

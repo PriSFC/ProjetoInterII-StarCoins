@@ -18,12 +18,17 @@ O objetivo da aplicação é oferecer um meio para compensar alunos por tarefas 
 A aplicação deve permitir que um professor atribua uma nota à atividade e esta nota é convertida em certa quantidade de moedas. No sistema o aluno poderá trocar suas moedas por algum produto. 
 
 Diagrama de Entidade e Relacionamento
-![alt text](<StarCoins_ProjInterII-REAL DER Star Coin.jpg>)
+![alt text](<Telas_imagens/StarCoins_ProjInterII-REAL DER Star Coin.jpg>)
 
 Telas:
-- Usuário Adm
+- Login
+![alt text](Telas_imagens/Login.png)
+- Usuário Adm 
+![alt text](Telas_imagens/Adm/Home_Adm.png)
 - Usuário Prof
+![alt text](Telas_imagens/Prof/Home_Prof.png)
 - Usuário Aluno
+![alt text](Telas_imagens/Aluno/Home_Aluno.png)
 
 
 # Referências:
