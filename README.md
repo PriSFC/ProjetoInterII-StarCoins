@@ -4,20 +4,27 @@ Disciplinas:
 - Engenharia de Software III
 - Programação Orientada a Objetos
 
-#Star Coins
+
+# Star Coins
 
 Integrantes:
 - Deivid
 - Pedro Arthur
+- Priscilla
 - Rafaela
 
 Objetivos:
 O objetivo da aplicação é oferecer um meio para compensar alunos por tarefas feitas. 
 A aplicação deve permitir que um professor atribua uma nota à atividade e esta nota é convertida em certa quantidade de moedas. No sistema o aluno poderá trocar suas moedas por algum produto. 
 
-Telas
+Diagrama de Entidade e Relacionamento
+![alt text](<StarCoins_ProjInterII-REAL DER Star Coin.jpg>)
 
-Diagrama do Banco de Dados
+Telas:
+- Usuário Adm
+- Usuário Prof
+- Usuário Aluno
+
 
 # Referências:
 
@@ -69,3 +76,20 @@ Atualiza o banco de dados com a migration:
 `dotnet ef database update`
 
 `dotnet ef database update --connection "Data Source=My.db"`
+
+Banco de Dados:
+- Pasta Data > StarCoinsDatabase.cs
+- Program.cs
+- Controllers:
+    - public class <NomeModel>Controller : Controller
+    {
+        private readonly StarCoinsDatabase db;
+
+        // Construtor que injeta a instância do banco de dados
+        public <NomeModel>Controller(StarCoinsDatabase db)
+        {
+            this.db = db;
+        }
+
+    // outros métodos (HttpGet e HttpPost)
+    }

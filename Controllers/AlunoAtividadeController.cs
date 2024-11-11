@@ -26,7 +26,7 @@ namespace StarCoins.Controllers
                 .ToListAsync();
 
             // Verifica se a atividade foi encontrada e se possui registros de alunos
-            if (atividadeDetalhes == null || !atividadeDetalhes.Any())
+            if (atividadeDetalhes == null || atividadeDetalhes.Count == 0)
             {
                 return NotFound(); // Retorna um erro 404 se a atividade não for encontrada
             }
@@ -47,7 +47,7 @@ namespace StarCoins.Controllers
                 .ToListAsync();
 
             // Verifica se a atividade foi encontrada e se possui alunos vinculados
-            if (atividadeDetalhes == null || !atividadeDetalhes.Any())
+            if (atividadeDetalhes == null || atividadeDetalhes.Count == 0)
             {
                 return NotFound(); // Retorna um erro 404 se não houver registros encontrados
             }
@@ -66,7 +66,7 @@ namespace StarCoins.Controllers
                 .ToListAsync();
 
             // Verifica se há registros existentes de atividades dos alunos
-            if (!alunoAtividadesExistentes.Any())
+            if (alunoAtividadesExistentes.Count == 0)
             {
                 return NotFound(); // Retorna um erro 404 se não houver registros encontrados
             }
