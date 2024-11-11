@@ -20,10 +20,10 @@ A aplicação deve permitir que um professor atribua uma nota à atividade e est
 Diagrama de Entidade e Relacionamento
 ![alt text](<Telas_imagens/StarCoins_ProjInterII-REAL DER Star Coin.jpg>)
 
-Telas:
+Telas - Mais imagens na pasta Telas_imagens:
 - Login
 ![alt text](Telas_imagens/Login.png)
-- Usuário Adm 
+- Usuário Adm - 
 ![alt text](Telas_imagens/Adm/Home_Adm.png)
 - Usuário Prof
 ![alt text](Telas_imagens/Prof/Home_Prof.png)
