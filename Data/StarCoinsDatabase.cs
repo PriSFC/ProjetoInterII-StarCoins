@@ -30,7 +30,7 @@ public class StarCoinsDatabase: DbContext {
 
         modelBuilder.Entity<AlunoAtividade>()
             .HasOne(aa => aa.Aluno)
-            .WithMany() // Se necessário, especifique o nome da coleção
+            .WithMany()
             .HasForeignKey(aa => aa.UsuarioId) // Explicitamente o nome da chave estrangeira
             .HasPrincipalKey(a => a.UsuarioId); // Garante que o relacionamento seja baseado no campo correto
 

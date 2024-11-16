@@ -71,6 +71,21 @@ namespace StarCoins.Controllers
                 return NotFound(); // Retorna um erro 404 se não houver registros encontrados
             }
 
+            // Valida que todas as notas estão preenchidas e dentro do intervalo desejado
+            foreach (var alunoAtividade in alunoAtividades)
+            {
+                if (!alunoAtividade.Value.Nota.HasValue || alunoAtividade.Value.Nota < 0 || alunoAtividade.Value.Nota > 10)
+                {
+                     ModelState.AddModelError("", "Todos os campos de nota devem ser preenchidos com um valor entre 0 e 10.");
+
+                    // Recarrega os dados da atividade e dos alunos para exibição na view
+                    var atividade = await db.Atividades.FindAsync(atividadeId); // Exemplo de como obter a atividade atual
+                    ViewBag.Atividade = atividade; // Envie os dados adicionais, se necessário
+
+                    return View("Update", alunoAtividadesExistentes); // Retorna a View de edição com os dados carregados
+                }
+            }
+
             // Para cada registro de aluno na atividade, tenta atualizar a nota
             foreach (var alunoAtividade in alunoAtividadesExistentes)
             {
@@ -104,9 +119,9 @@ namespace StarCoins.Controllers
             return nota switch
             {
                 >= 9m and <= 10m => 15, // Notas de 9 a 10 geram 15 moedas
-                >= 6m and < 9m => 10,   // Notas de 6 a 8,9 geram 10 moedas
-                >= 1m and < 6m => 5,    // Notas de 1 a 5,9 geram 5 moedas
-                _ => 0                  // Notas abaixo de 1 geram 0 moedas
+                >= 6m and < 9m => 10,   // Notas de 6 a 8,99 geram 10 moedas
+                >= 1m and < 6m => 5,    // Notas de 1 a 5,99 geram 5 moedas
+                _ => 0                  // Notas abaixo de 1 geram 0 moedas - _(underline) representa qualquer valor que não atenda aos casos anteriores. 
             };
         }
 
@@ -128,7 +143,7 @@ namespace StarCoins.Controllers
 
             if (atividadesAluno == null || !atividadesAluno.Any())
             {
-                return NotFound();
+                return View(atividadesAluno);
             }
 
             return View(atividadesAluno);

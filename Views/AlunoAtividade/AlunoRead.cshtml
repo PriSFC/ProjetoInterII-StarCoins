@@ -13,25 +13,35 @@
 <div class="text-center">
     <h2>Minhas Atividades</h2>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Atividade</th>
-                <th>Descrição</th>
-                <th>Nota</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    @if (!Model.Any()) // Verifica se não há pedidos
+    {
+        <div class="alert alert-warning" role="alert">
+            Você ainda não fez nenhuma atividade.
+        </div>
+    }
+    else
+    {
+
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@item.Atividade.Nome</td>
-                    <td>@item.Atividade.Descricao</td>
-                    <td>@item.Nota</td>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Nota</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Atividade.Nome</td>
+                        <td>@item.Atividade.Descricao</td>
+                        <td>@item.Nota</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 </div>
 </body>
 </html>

@@ -6,7 +6,6 @@ public class AlunoAtividade {
     public DateOnly DataRealizacao { get; set; }
     public int Status { get; set; } //(1 - não entregue, 2 - entregue)
     public decimal? Nota { get; set; }
-
     public Aluno Aluno { get; set; } 
     public Atividade Atividade { get; set; }
 }
