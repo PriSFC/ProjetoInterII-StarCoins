@@ -1,3 +1,5 @@
+@model Usuario;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +16,42 @@
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/usuario/read">Usuários</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Cadastrar um Usuário</li>
+        <li class="breadcrumb-item active" aria-current="page">Cadastrar Usuário</li>
     </ol>
     </nav>
 
     <form action="/usuario/create" method="POST" class="col offset-md-2 col-8">
-        <th scope="col">Nome</th>
-        <input placeholder="Digite o Nome" name="Nome" class="form-control" /><br>
-        <th scope="col">Perfil</th>
-        <input placeholder="Escolha o Perfil" name="Perfil" class="form-control" /><br>
-        <th scope="col">Login</th>
-        <input placeholder="Digite o Login" name="Login" class="form-control" /><br>
-        <th scope="col">E-mail</th>
-        <input placeholder="Digite o E-mail" name="Email" class="form-control" /><br>
-        <th scope="col">Senha</th>
-        <input placeholder="Digite a Senha" name="Senha" class="form-control" /><br>
+        <div>
+            <th scope="col">Nome*</th>
+            <input placeholder="Digite o Nome" name="Nome" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Nome)<br>
+        </div>
+            
+        <div>
+            <th scope="col">Perfil*</th>
+            <input placeholder="Digite o Perfil - Adm, Prof, Aluno" name="Perfil" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Perfil)<br>
+        </div>
+        
+        <div>
+            <th scope="col">Login*</th>
+            <input placeholder="Digite o Login" name="Login" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Login)<br>
+        </div>
+        
+        <div>
+            <th scope="col">E-mail*</th>
+            <input placeholder="Digite o E-mail" name="Email" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Email)<br>
+        </div>
+        
+        <div>
+            <th scope="col">Senha*</th>
+            <input placeholder="Digite a Senha" name="Senha" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Senha)<br>
+        </div>
+        
+        <br>
         <button class="btn btn-primary">Salvar</button>
         <a class="btn btn-outline-secondary" href="/usuario/read">Voltar</a>
     </form>

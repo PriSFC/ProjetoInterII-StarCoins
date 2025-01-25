@@ -1,0 +1,31 @@
+@model StarCoins.Models.Pedido
+
+@{
+    ViewData["Title"] = "Verificar Pedido";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center">
+            <h2>Detalhes do Pedido</h2>
+        </div>
+        <div class="card-body text-center">
+            <h5 class="card-title">Detalhes do Pedido</h5>
+            <p class="card-text">Código do Pedido: <strong>@Model.Ticket</strong></p>
+            <p class="card-text">Produto: <strong>@Model.Produto.Nome</strong></p>
+            <p class="card-text">Descrição: <strong>@Model.Produto.Descricao</strong></p>
+            <p class="card-text">Aluno: <strong>@Model.Usuario.Nome</strong></p>
+            <p class="card-text">Data da Compra: <strong>@Model.DataPedido.ToString("dd/MM/yyyy")</strong></p>
+            <p class="card-text">Valor da Compra: <strong>@Model.Moeda Moedas</strong></p>
+            <div class="d-flex justify-content-center mt-4">
+                
+                <a class="btn btn-primary mx-2" href="/pedido/read">Meus Pedidos</a>
+        </div>
+        <br>
+        <div class="card-footer text-muted text-center">
+            Status: @(Model.Status == "1" ? "Em Andamento" : "Concluído")
+        </div>
+    </div>
+</div>
+
+

@@ -9,7 +9,8 @@ namespace StarCoins.Controllers {
             
             HomeModel home = new HomeModel();
 
-            home.Nome = "Usuário?";
+            home.Nome = HttpContext.Session.GetString("userName");
+            home.Perfil = HttpContext.Session.GetString("perfil");
 
             return View(home);
         }
@@ -19,6 +20,8 @@ namespace StarCoins.Controllers {
         public IActionResult Error() {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
     }
+
 }
 

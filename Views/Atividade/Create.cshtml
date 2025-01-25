@@ -1,3 +1,5 @@
+@model StarCoins.Models.Atividade
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,19 +16,37 @@
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/atividade/read">Atividades</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Cadastrar um Atividade</li>
+        <li class="breadcrumb-item active" aria-current="page">Cadastrar Atividade</li>
     </ol>
     </nav>
 
+
     <form action="/atividade/create" method="POST" class="col offset-md-2 col-8">
-        <th scope="col">Nome</th>
-        <input placeholder="Digite o Nome" name="Nome" class="form-control" /><br>
-        <th scope="col">Descrição</th>
-        <input placeholder="Digite a Descrição" name="Descricao" class="form-control" /><br>
-        <th scope="col">Moeda</th>
-        <input placeholder="Digite o Valor em Moedas" name="Moeda" class="form-control" /><br>
-        <th scope="col">Data de Entrega</th>
-        <input placeholder="Digite a Data de Entrega (dd/mm/aaaa)" name="DataEntrega" class="form-control" type="date" data-date-format="dd/mm/yyyy" /><br>
+        
+        <div>
+            <th scope="col">Nome*</th>
+            <input placeholder="Digite o Nome" name="Nome" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Nome)<br>
+        </div>
+        
+        <div>
+            <th scope="col">Descrição*</th>
+            <input placeholder="Digite a Descrição" name="Descricao" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Descricao)<br>
+        </div>
+        
+        <div>
+            <th scope="col">Moeda*</th>
+            <input placeholder="Digite o Valor em Moedas" name="Moeda" class="form-control" />
+            @Html.ValidationMessageFor(x => x.Moeda)<br>
+        </div>
+        
+        <div>
+            <th scope="col">Data de Entrega*</th>
+            <input placeholder="Digite a Data de Entrega (dd/mm/aaaa)" name="DataEntrega" class="form-control" type="date" data-date-format="dd-mm-yyyy" />
+            @Html.ValidationMessageFor(x => x.DataEntrega)<br><br>
+        </div>
+        
         <button class="btn btn-primary">Salvar</button>
         <a class="btn btn-outline-secondary" href="/atividade/read">Voltar</a>
     </form>
